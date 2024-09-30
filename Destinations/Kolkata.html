@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b64929a73ba21e28928065cde8ae0cf1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <div style="position:fixed; bottom:10px; left:10px; border:2px solid black; z-index:9999; font-size:14px;">&nbsp;<b>cluster:</b><br>&nbsp;<i class="fa fa-circle 
+     fa-1x" style="color:#1D1D1B">
+     </i>&nbsp;0<br>&nbsp;<i class="fa fa-circle 
+     fa-1x" style="color:#047360">
+     </i>&nbsp;1<br>&nbsp;<i class="fa fa-circle 
+     fa-1x" style="color:#7529F3">
+     </i>&nbsp;2<br>&nbsp;<i class="fa fa-circle 
+     fa-1x" style="color:#B88167">
+     </i>&nbsp;3<br>&nbsp;<i class="fa fa-circle 
+     fa-1x" style="color:#A2EE42">
+     </i>&nbsp;4<br></div>
+    
+            <div class="folium-map" id="map_b64929a73ba21e28928065cde8ae0cf1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b64929a73ba21e28928065cde8ae0cf1 = L.map(
+                "map_b64929a73ba21e28928065cde8ae0cf1",
+                {
+                    center: [22.5726459, 88.3638953],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa118bc138c4bf746531597dcc30370c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+            var circle_marker_3dcd20f462812ad1b5e5c6fb44dc919e = L.circleMarker(
+                [22.56174943131244, 88.35159438973265],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.924528301886792, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_ed116ec6fa8adc889c303b2d602122e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6111621c62c15410db131016ba3f3ff2 = $(`<div id="html_6111621c62c15410db131016ba3f3ff2" style="width: 100.0%; height: 100.0%;"> '15, Jawaharlal Nehru Rd', 'Kolkata 700013', 'West Bengal', 'India' </div>`)[0];
+                popup_ed116ec6fa8adc889c303b2d602122e6.setContent(html_6111621c62c15410db131016ba3f3ff2);
+            
+        
+
+        circle_marker_3dcd20f462812ad1b5e5c6fb44dc919e.bindPopup(popup_ed116ec6fa8adc889c303b2d602122e6)
+        ;
+
+        
+    
+    
+            var circle_marker_628a0b8bc2ceccda70330d6cf0493ddc = L.circleMarker(
+                [22.564541597977065, 88.34329605102539],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.037735849056604, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_17ef437d37dd13a73f2772994f672ac0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38386facc9a69d0ade3a74e65fc3cd5d = $(`<div id="html_38386facc9a69d0ade3a74e65fc3cd5d" style="width: 100.0%; height: 100.0%;"> 'BBD Bagh', 'Kolkata 700021', 'West Bengal', 'India' </div>`)[0];
+                popup_17ef437d37dd13a73f2772994f672ac0.setContent(html_38386facc9a69d0ade3a74e65fc3cd5d);
+            
+        
+
+        circle_marker_628a0b8bc2ceccda70330d6cf0493ddc.bindPopup(popup_17ef437d37dd13a73f2772994f672ac0)
+        ;
+
+        
+    
+    
+            var circle_marker_c40b5b3998ec575873422d66089054f7 = L.circleMarker(
+                [22.548543210513543, 88.35135293517806],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.867924528301888, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_e563c87aeea1ca05680fb960d297a73d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b51a9f732d9af0d41742a3466d735747 = $(`<div id="html_b51a9f732d9af0d41742a3466d735747" style="width: 100.0%; height: 100.0%;"> '4/1, Middleton St', 'Kolkata 700071', 'West Bengal', 'India' </div>`)[0];
+                popup_e563c87aeea1ca05680fb960d297a73d.setContent(html_b51a9f732d9af0d41742a3466d735747);
+            
+        
+
+        circle_marker_c40b5b3998ec575873422d66089054f7.bindPopup(popup_e563c87aeea1ca05680fb960d297a73d)
+        ;
+
+        
+    
+    
+            var circle_marker_7aade63c0ebb96cb4c93e4f284968359 = L.circleMarker(
+                [22.55913129083683, 88.35327973820304],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.962264150943396, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_b26398fca6d669c5ee36fd1d614f1127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ad7dcdc8b6d27f27ec15c988d3575da = $(`<div id="html_8ad7dcdc8b6d27f27ec15c988d3575da" style="width: 100.0%; height: 100.0%;"> 'Hotel Lindsay', 'Kolkata 700087', 'West Bengal', 'India' </div>`)[0];
+                popup_b26398fca6d669c5ee36fd1d614f1127.setContent(html_8ad7dcdc8b6d27f27ec15c988d3575da);
+            
+        
+
+        circle_marker_7aade63c0ebb96cb4c93e4f284968359.bindPopup(popup_b26398fca6d669c5ee36fd1d614f1127)
+        ;
+
+        
+    
+    
+            var circle_marker_5307975c2a1d6bec7b27dcd3d411abab = L.circleMarker(
+                [22.549906, 88.344219],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.566037735849058, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_8415a8d65f144303ebf8bd1fed452ead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_744a05ec8a785b30c407d5b79e360fda = $(`<div id="html_744a05ec8a785b30c407d5b79e360fda" style="width: 100.0%; height: 100.0%;"> 'Kolkata', 'West Bengal', 'India' </div>`)[0];
+                popup_8415a8d65f144303ebf8bd1fed452ead.setContent(html_744a05ec8a785b30c407d5b79e360fda);
+            
+        
+
+        circle_marker_5307975c2a1d6bec7b27dcd3d411abab.bindPopup(popup_8415a8d65f144303ebf8bd1fed452ead)
+        ;
+
+        
+    
+    
+            var circle_marker_a6aa80d6ba76bfff6541bae3e519aa5c = L.circleMarker(
+                [22.59603964813232, 88.36748519805334],
+                {"bubblingMouseEvents": true, "color": "#7529F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7529F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3584905660377355, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_cbc28ca8ecfa15308d00d45919ce9c61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4595603a4ebb856a08d99cd8a106e03 = $(`<div id="html_f4595603a4ebb856a08d99cd8a106e03" style="width: 100.0%; height: 100.0%;"> '56, Ramdulal Sarkar St', 'Kolkata 700006', 'West Bengal', 'India' </div>`)[0];
+                popup_cbc28ca8ecfa15308d00d45919ce9c61.setContent(html_f4595603a4ebb856a08d99cd8a106e03);
+            
+        
+
+        circle_marker_a6aa80d6ba76bfff6541bae3e519aa5c.bindPopup(popup_cbc28ca8ecfa15308d00d45919ce9c61)
+        ;
+
+        
+    
+    
+            var circle_marker_3030cd14547d6a6929055f3f5d18abb4 = L.circleMarker(
+                [22.570357866885754, 88.40531937782346],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.20754716981132, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_a8c73a1c84fe0aaf4414ffb153819e09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f494f9065d685f37abef69e1c1752c31 = $(`<div id="html_f494f9065d685f37abef69e1c1752c31" style="width: 100.0%; height: 100.0%;"> 'Ja-1 Sector Iii Salt Lake City', 'Kolkata 700098', 'West Bengal', 'India' </div>`)[0];
+                popup_a8c73a1c84fe0aaf4414ffb153819e09.setContent(html_f494f9065d685f37abef69e1c1752c31);
+            
+        
+
+        circle_marker_3030cd14547d6a6929055f3f5d18abb4.bindPopup(popup_a8c73a1c84fe0aaf4414ffb153819e09)
+        ;
+
+        
+    
+    
+            var circle_marker_041c2364b081752e18988494c4ec61cf = L.circleMarker(
+                [22.546493181530703, 88.3881620914969],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3584905660377355, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_3967765a1b18a3d5a7002df57ebf5b92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c28235ab82718fd7e4fb1471d4599c4 = $(`<div id="html_1c28235ab82718fd7e4fb1471d4599c4" style="width: 100.0%; height: 100.0%;"> '54C, Matheswartala Rd', 'Kolkata 700046', 'West Bengal', 'India' </div>`)[0];
+                popup_3967765a1b18a3d5a7002df57ebf5b92.setContent(html_1c28235ab82718fd7e4fb1471d4599c4);
+            
+        
+
+        circle_marker_041c2364b081752e18988494c4ec61cf.bindPopup(popup_3967765a1b18a3d5a7002df57ebf5b92)
+        ;
+
+        
+    
+    
+            var circle_marker_91283acea22f943d576d1a3325650cce = L.circleMarker(
+                [22.552364717378428, 88.35254430770874],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.981132075471698, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_b8eba2470fa029e31f7b0d953f49b307 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bb616a0d557ecdf0ab77cc43f4083cd = $(`<div id="html_3bb616a0d557ecdf0ab77cc43f4083cd" style="width: 100.0%; height: 100.0%;"> '18, Park St', 'Kolkata 700016', 'West Bengal', 'India' </div>`)[0];
+                popup_b8eba2470fa029e31f7b0d953f49b307.setContent(html_3bb616a0d557ecdf0ab77cc43f4083cd);
+            
+        
+
+        circle_marker_91283acea22f943d576d1a3325650cce.bindPopup(popup_b8eba2470fa029e31f7b0d953f49b307)
+        ;
+
+        
+    
+    
+            var circle_marker_f5a7fa95ef412716acb64fae282e5c35 = L.circleMarker(
+                [22.537714013534053, 88.34421978219828],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.622641509433962, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_a0e055e22bdf7c45b6658406857e0c5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3074caa4c9bd764cad67afcbb543cff = $(`<div id="html_d3074caa4c9bd764cad67afcbb543cff" style="width: 100.0%; height: 100.0%;"> '10/B, Harish Mukherjee Rd', 'Kolkata 700025', 'West Bengal', 'India' </div>`)[0];
+                popup_a0e055e22bdf7c45b6658406857e0c5f.setContent(html_d3074caa4c9bd764cad67afcbb543cff);
+            
+        
+
+        circle_marker_f5a7fa95ef412716acb64fae282e5c35.bindPopup(popup_a0e055e22bdf7c45b6658406857e0c5f)
+        ;
+
+        
+    
+    
+            var circle_marker_ecbfb9434781838c6fe176b0a9ab5818 = L.circleMarker(
+                [22.545844129353117, 88.34289036897952],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.943396226415095, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_33d96f3eebf1ac7477b9ba77d69f53cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dbfb139e5af5c7b37b2694dbd8094a3 = $(`<div id="html_7dbfb139e5af5c7b37b2694dbd8094a3" style="width: 100.0%; height: 100.0%;"> "1, Queen's Way", 'Kolkata 700071', 'West Bengal', 'India' </div>`)[0];
+                popup_33d96f3eebf1ac7477b9ba77d69f53cc.setContent(html_7dbfb139e5af5c7b37b2694dbd8094a3);
+            
+        
+
+        circle_marker_ecbfb9434781838c6fe176b0a9ab5818.bindPopup(popup_33d96f3eebf1ac7477b9ba77d69f53cc)
+        ;
+
+        
+    
+    
+            var circle_marker_8180034d028b3699d9fcb29e1450f072 = L.circleMarker(
+                [22.577618905113656, 88.39043855667114],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.037735849056604, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_02d81b43d1da684f59325a217f1a512b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b9797d76239e1908a63efbfbb2bdc28 = $(`<div id="html_4b9797d76239e1908a63efbfbb2bdc28" style="width: 100.0%; height: 100.0%;"> 'P-183A, C. I. T. Rd', 'Kolkata 700054', 'West Bengal', 'India' </div>`)[0];
+                popup_02d81b43d1da684f59325a217f1a512b.setContent(html_4b9797d76239e1908a63efbfbb2bdc28);
+            
+        
+
+        circle_marker_8180034d028b3699d9fcb29e1450f072.bindPopup(popup_02d81b43d1da684f59325a217f1a512b)
+        ;
+
+        
+    
+    
+            var circle_marker_2a0d63cfd2e7155b28a541e8e99cdf06 = L.circleMarker(
+                [22.545592321408858, 88.3874745703988],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3584905660377355, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_98659fa85b3019a092eaccb5692d2620 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24deafc22ea8601383cdcb10256da53e = $(`<div id="html_24deafc22ea8601383cdcb10256da53e" style="width: 100.0%; height: 100.0%;"> '50/1, Matherswartala Rd', 'Kolkata 700046', 'West Bengal', 'India' </div>`)[0];
+                popup_98659fa85b3019a092eaccb5692d2620.setContent(html_24deafc22ea8601383cdcb10256da53e);
+            
+        
+
+        circle_marker_2a0d63cfd2e7155b28a541e8e99cdf06.bindPopup(popup_98659fa85b3019a092eaccb5692d2620)
+        ;
+
+        
+    
+    
+            var circle_marker_447248e55bfc9e79280a4c7952e27a64 = L.circleMarker(
+                [22.533096497319534, 88.35303246974945],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.981132075471698, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_7309af85194c3c768229632c701f79b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf13db2cf6863407cec552e9904317ca = $(`<div id="html_cf13db2cf6863407cec552e9904317ca" style="width: 100.0%; height: 100.0%;"> '41/1A, Sarat Bose Rd', 'Kolkata 700020', 'West Bengal', 'India' </div>`)[0];
+                popup_7309af85194c3c768229632c701f79b9.setContent(html_cf13db2cf6863407cec552e9904317ca);
+            
+        
+
+        circle_marker_447248e55bfc9e79280a4c7952e27a64.bindPopup(popup_7309af85194c3c768229632c701f79b9)
+        ;
+
+        
+    
+    
+            var circle_marker_0e8a4d9b52d0553ab041a77deb0d96cd = L.circleMarker(
+                [22.559267458018144, 88.33305706140452],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_b57750a64060290dde9ddcfd2abfcc47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2694e43061ec053a2394e877f01d150a = $(`<div id="html_2694e43061ec053a2394e877f01d150a" style="width: 100.0%; height: 100.0%;"> 'Strand Rd', 'Kolkata 700072', 'West Bengal', 'India' </div>`)[0];
+                popup_b57750a64060290dde9ddcfd2abfcc47.setContent(html_2694e43061ec053a2394e877f01d150a);
+            
+        
+
+        circle_marker_0e8a4d9b52d0553ab041a77deb0d96cd.bindPopup(popup_b57750a64060290dde9ddcfd2abfcc47)
+        ;
+
+        
+    
+    
+            var circle_marker_d3810dd54a572d10739e2ee84b1fedfb = L.circleMarker(
+                [22.54651846470317, 88.387213364055],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3584905660377355, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_e9e424ac712627939291e55924e40a22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4742dd56107814df575dcd6826745d32 = $(`<div id="html_4742dd56107814df575dcd6826745d32" style="width: 100.0%; height: 100.0%;"> '77/1, Christopher Rd', 'Kolkata 700046', 'West Bengal', 'India' </div>`)[0];
+                popup_e9e424ac712627939291e55924e40a22.setContent(html_4742dd56107814df575dcd6826745d32);
+            
+        
+
+        circle_marker_d3810dd54a572d10739e2ee84b1fedfb.bindPopup(popup_e9e424ac712627939291e55924e40a22)
+        ;
+
+        
+    
+    
+            var circle_marker_b9a0916c4081095243514f0919c73336 = L.circleMarker(
+                [22.552786429700397, 88.35262520281624],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.20754716981132, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_22983d4c055b34657a26671f6f2d4f7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2800f3bf124146692d93b4db3398d550 = $(`<div id="html_2800f3bf124146692d93b4db3398d550" style="width: 100.0%; height: 100.0%;"> '18, Park St (Sir William James Sarani)', 'Kolkata 700016', 'West Bengal', 'India' </div>`)[0];
+                popup_22983d4c055b34657a26671f6f2d4f7b.setContent(html_2800f3bf124146692d93b4db3398d550);
+            
+        
+
+        circle_marker_b9a0916c4081095243514f0919c73336.bindPopup(popup_22983d4c055b34657a26671f6f2d4f7b)
+        ;
+
+        
+    
+    
+            var circle_marker_f87eca2ed92d6bce7ca966229f4645d0 = L.circleMarker(
+                [22.539091355187338, 88.36557324255233],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.660377358490567, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_ffdad1ad10afcf067d609daeb5364780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a6edae22a3d4cb3cdc75de4d64c42ab = $(`<div id="html_7a6edae22a3d4cb3cdc75de4d64c42ab" style="width: 100.0%; height: 100.0%;"> 'Quest Mall', 'Kolkata 700017', 'West Bengal', 'India' </div>`)[0];
+                popup_ffdad1ad10afcf067d609daeb5364780.setContent(html_7a6edae22a3d4cb3cdc75de4d64c42ab);
+            
+        
+
+        circle_marker_f87eca2ed92d6bce7ca966229f4645d0.bindPopup(popup_ffdad1ad10afcf067d609daeb5364780)
+        ;
+
+        
+    
+    
+            var circle_marker_770891c106cbeb6da84782695f8aa922 = L.circleMarker(
+                [22.570893097865817, 88.40102591127794],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.622641509433962, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_2ed11190ba290a8fd0c06b1c13c027ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_609356986c0a66195064beed9a84ee11 = $(`<div id="html_609356986c0a66195064beed9a84ee11" style="width: 100.0%; height: 100.0%;"> '89C, Maulana Abdul Kalam Azad Sarani (at Swabhumi)', 'Kolkata 700054', 'West Bengal', 'India' </div>`)[0];
+                popup_2ed11190ba290a8fd0c06b1c13c027ff.setContent(html_609356986c0a66195064beed9a84ee11);
+            
+        
+
+        circle_marker_770891c106cbeb6da84782695f8aa922.bindPopup(popup_2ed11190ba290a8fd0c06b1c13c027ff)
+        ;
+
+        
+    
+    
+            var circle_marker_686abdb2b428195a6172a8343a8ee22a = L.circleMarker(
+                [22.527711762714475, 88.36867703124626],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.622641509433962, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_db736c6db9a2b13c2fdff7e0ef85797e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_104e8846196d186dadc143e6665378d5 = $(`<div id="html_104e8846196d186dadc143e6665378d5" style="width: 100.0%; height: 100.0%;"> '6, Ballygunge Pl', 'Kolkata 700019', 'West Bengal', 'India' </div>`)[0];
+                popup_db736c6db9a2b13c2fdff7e0ef85797e.setContent(html_104e8846196d186dadc143e6665378d5);
+            
+        
+
+        circle_marker_686abdb2b428195a6172a8343a8ee22a.bindPopup(popup_db736c6db9a2b13c2fdff7e0ef85797e)
+        ;
+
+        
+    
+    
+            var circle_marker_22007ed36b722830784bd11084b90da9 = L.circleMarker(
+                [22.539176012738004, 88.3654510974884],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.660377358490567, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_a3dc2b18ad8a92c74e659793facdab0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23de0a2d679e2836e7c86596ae87c78d = $(`<div id="html_23de0a2d679e2836e7c86596ae87c78d" style="width: 100.0%; height: 100.0%;"> 'Quest Mall', 'Kolkata 700017', 'West Bengal', 'India' </div>`)[0];
+                popup_a3dc2b18ad8a92c74e659793facdab0f.setContent(html_23de0a2d679e2836e7c86596ae87c78d);
+            
+        
+
+        circle_marker_22007ed36b722830784bd11084b90da9.bindPopup(popup_a3dc2b18ad8a92c74e659793facdab0f)
+        ;
+
+        
+    
+    
+            var circle_marker_5db2f35e39a4e7fe303a687b88538d55 = L.circleMarker(
+                [22.553897023487213, 88.35406338023041],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.867924528301888, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_1d44b8470d56a1fe625d562a9a73e625 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44654277fceb14aab6c1ec0c1ea870c0 = $(`<div id="html_44654277fceb14aab6c1ec0c1ea870c0" style="width: 100.0%; height: 100.0%;"> '119A, Muzaffar Ahmed St (Park St)', 'Kolkata 700016', 'West Bengal', 'India' </div>`)[0];
+                popup_1d44b8470d56a1fe625d562a9a73e625.setContent(html_44654277fceb14aab6c1ec0c1ea870c0);
+            
+        
+
+        circle_marker_5db2f35e39a4e7fe303a687b88538d55.bindPopup(popup_1d44b8470d56a1fe625d562a9a73e625)
+        ;
+
+        
+    
+    
+            var circle_marker_6a7964116cfa57d902b26821cfad2014 = L.circleMarker(
+                [22.53876974957041, 88.3655321583331],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.660377358490567, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_38fe019e918fb909e61238600297058c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e3a1a56b54a0b5c12dfe11912d37766 = $(`<div id="html_4e3a1a56b54a0b5c12dfe11912d37766" style="width: 100.0%; height: 100.0%;"> '5th Floor, Quest Mall', 'Kolkata 700017', 'West Bengal', 'India' </div>`)[0];
+                popup_38fe019e918fb909e61238600297058c.setContent(html_4e3a1a56b54a0b5c12dfe11912d37766);
+            
+        
+
+        circle_marker_6a7964116cfa57d902b26821cfad2014.bindPopup(popup_38fe019e918fb909e61238600297058c)
+        ;
+
+        
+    
+    
+            var circle_marker_f24278631d97c027db2934ef39d0fb37 = L.circleMarker(
+                [22.537459297849168, 88.33406559589542],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3584905660377355, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_6af15d76091acd884deaf430678d7c9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_215918214d9a8f572829e44c6a89d2ce = $(`<div id="html_215918214d9a8f572829e44c6a89d2ce" style="width: 100.0%; height: 100.0%;"> '34B, Belvedere Rd', 'Kolkata 700027', 'West Bengal', 'India' </div>`)[0];
+                popup_6af15d76091acd884deaf430678d7c9f.setContent(html_215918214d9a8f572829e44c6a89d2ce);
+            
+        
+
+        circle_marker_f24278631d97c027db2934ef39d0fb37.bindPopup(popup_6af15d76091acd884deaf430678d7c9f)
+        ;
+
+        
+    
+    
+            var circle_marker_248c110a90369902f57959758c96b4dd = L.circleMarker(
+                [22.51482318507145, 88.3932354886466],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_1a9beac5e5ec99decfba188f84a7131e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ac056414344813a30babe23b7f55d87 = $(`<div id="html_0ac056414344813a30babe23b7f55d87" style="width: 100.0%; height: 100.0%;"> '1858/1, Rajdanga Main Rd', 'Kolkata 700107', 'West Bengal', 'India' </div>`)[0];
+                popup_1a9beac5e5ec99decfba188f84a7131e.setContent(html_0ac056414344813a30babe23b7f55d87);
+            
+        
+
+        circle_marker_248c110a90369902f57959758c96b4dd.bindPopup(popup_1a9beac5e5ec99decfba188f84a7131e)
+        ;
+
+        
+    
+    
+            var circle_marker_7391aac350038690ff07878ef265d0b0 = L.circleMarker(
+                [22.56053424174586, 88.35164027687136],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.735849056603774, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_451f4fdb7180c236865ba5e6b6958559 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d2eb021a07c4f163a6b6fa5b5a3d0bd = $(`<div id="html_1d2eb021a07c4f163a6b6fa5b5a3d0bd" style="width: 100.0%; height: 100.0%;"> 'New Empire Cinema', 'Kolkata 700 013', 'West Bengal', 'India' </div>`)[0];
+                popup_451f4fdb7180c236865ba5e6b6958559.setContent(html_1d2eb021a07c4f163a6b6fa5b5a3d0bd);
+            
+        
+
+        circle_marker_7391aac350038690ff07878ef265d0b0.bindPopup(popup_451f4fdb7180c236865ba5e6b6958559)
+        ;
+
+        
+    
+    
+            var circle_marker_b21504efe27f9bf62b8b67d78793999d = L.circleMarker(
+                [22.53309675113572, 88.34708213260403],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.849056603773585, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_2ad0554acbb45f71cbb4346b787859d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35050af72bbfaf8208581e14ad25a078 = $(`<div id="html_35050af72bbfaf8208581e14ad25a078" style="width: 100.0%; height: 100.0%;"> '2, Paddapukur Rd', 'Kolkata 700020', 'West Bengal', 'India' </div>`)[0];
+                popup_2ad0554acbb45f71cbb4346b787859d0.setContent(html_35050af72bbfaf8208581e14ad25a078);
+            
+        
+
+        circle_marker_b21504efe27f9bf62b8b67d78793999d.bindPopup(popup_2ad0554acbb45f71cbb4346b787859d0)
+        ;
+
+        
+    
+    
+            var circle_marker_da2a58cd50c0630cc76ff61aa960d461 = L.circleMarker(
+                [22.544284, 88.398017],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.584905660377359, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_2dee5adc9f89f3a1c1f5856680d23706 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33609c855d02599c64fc76810b2e4c4a = $(`<div id="html_33609c855d02599c64fc76810b2e4c4a" style="width: 100.0%; height: 100.0%;"> 'Jbs Haldane Avenue', 'Kolkata 700046', 'West Bengal', 'India' </div>`)[0];
+                popup_2dee5adc9f89f3a1c1f5856680d23706.setContent(html_33609c855d02599c64fc76810b2e4c4a);
+            
+        
+
+        circle_marker_da2a58cd50c0630cc76ff61aa960d461.bindPopup(popup_2dee5adc9f89f3a1c1f5856680d23706)
+        ;
+
+        
+    
+    
+            var circle_marker_4d72cfcb71ca01fa7445c07a26fd7533 = L.circleMarker(
+                [22.53835691442138, 88.35140625118088],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.924528301886792, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_b2e7090370dbc325c80157109163d608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f7a5a639308ef83e1bf47b0d4fc47de = $(`<div id="html_8f7a5a639308ef83e1bf47b0d4fc47de" style="width: 100.0%; height: 100.0%;"> 'Forum Mall, 10/3 Elgin Rd', 'Kolkata 700020', 'West Bengal', 'India' </div>`)[0];
+                popup_b2e7090370dbc325c80157109163d608.setContent(html_8f7a5a639308ef83e1bf47b0d4fc47de);
+            
+        
+
+        circle_marker_4d72cfcb71ca01fa7445c07a26fd7533.bindPopup(popup_b2e7090370dbc325c80157109163d608)
+        ;
+
+        
+    
+    
+            var circle_marker_7881ae8f2c7a25b9aaa108f6ea5519d4 = L.circleMarker(
+                [22.55312518463798, 88.35262477397919],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.433962264150944, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_4e83244422ae03bd8c77a55cf2a57426 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fffd827ec00f520b94005071a32d0ae = $(`<div id="html_9fffd827ec00f520b94005071a32d0ae" style="width: 100.0%; height: 100.0%;"> '43, 47, 55, Park St', 'Kolkata 700016', 'West Bengal', 'India' </div>`)[0];
+                popup_4e83244422ae03bd8c77a55cf2a57426.setContent(html_9fffd827ec00f520b94005071a32d0ae);
+            
+        
+
+        circle_marker_7881ae8f2c7a25b9aaa108f6ea5519d4.bindPopup(popup_4e83244422ae03bd8c77a55cf2a57426)
+        ;
+
+        
+    
+    
+            var circle_marker_1314d00a3c2331d08452719cfeb8cf7b = L.circleMarker(
+                [22.545077960882093, 88.3573835632132],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_d7ec4bf62b041755739debbf63e54569 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_597e9b44d905fab7a14ead52d3b2122e = $(`<div id="html_597e9b44d905fab7a14ead52d3b2122e" style="width: 100.0%; height: 100.0%;"> '31, Shakespeare Sarani', 'Kolkata 700017', 'West Bengal', 'India' </div>`)[0];
+                popup_d7ec4bf62b041755739debbf63e54569.setContent(html_597e9b44d905fab7a14ead52d3b2122e);
+            
+        
+
+        circle_marker_1314d00a3c2331d08452719cfeb8cf7b.bindPopup(popup_d7ec4bf62b041755739debbf63e54569)
+        ;
+
+        
+    
+    
+            var circle_marker_90748ecdfaff5a58861303744b0348ff = L.circleMarker(
+                [22.56796710486943, 88.35001000801633],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0754716981132075, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_3507c434aa5490e9ef95d516cd3bb9cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afeae3f2b6b51d4eeffd1b904d705a74 = $(`<div id="html_afeae3f2b6b51d4eeffd1b904d705a74" style="width: 100.0%; height: 100.0%;"> 'Hemanta Basu Sarani', 'Kolkata 700001', 'West Bengal', 'India' </div>`)[0];
+                popup_3507c434aa5490e9ef95d516cd3bb9cf.setContent(html_afeae3f2b6b51d4eeffd1b904d705a74);
+            
+        
+
+        circle_marker_90748ecdfaff5a58861303744b0348ff.bindPopup(popup_3507c434aa5490e9ef95d516cd3bb9cf)
+        ;
+
+        
+    
+    
+            var circle_marker_80ad66e31cf94b6a81fce6e07b20b1bb = L.circleMarker(
+                [22.615516268438355, 88.41234683990479],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9056603773584904, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_d3a1615367ef26f9ba96e242aa022da1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e87312212fd2d5e3a655492c9d32ce8 = $(`<div id="html_2e87312212fd2d5e3a655492c9d32ce8" style="width: 100.0%; height: 100.0%;"> 'Diamond Plaza Mall', 'Kolkata 700055', 'West Bengal', 'India' </div>`)[0];
+                popup_d3a1615367ef26f9ba96e242aa022da1.setContent(html_2e87312212fd2d5e3a655492c9d32ce8);
+            
+        
+
+        circle_marker_80ad66e31cf94b6a81fce6e07b20b1bb.bindPopup(popup_d3a1615367ef26f9ba96e242aa022da1)
+        ;
+
+        
+    
+    
+            var circle_marker_ce2d6c19574c0ca214e838990b098c49 = L.circleMarker(
+                [22.539240423448703, 88.35492074489594],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.150943396226415, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_0f89db584169e3c8d46583b6c9e998e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc20d6d78ed9945bcd02f254e24aa8c3 = $(`<div id="html_dc20d6d78ed9945bcd02f254e24aa8c3" style="width: 100.0%; height: 100.0%;"> '2/7, Sarat Bose Rd', 'Kolkata 700020', 'West Bengal', 'India' </div>`)[0];
+                popup_0f89db584169e3c8d46583b6c9e998e9.setContent(html_dc20d6d78ed9945bcd02f254e24aa8c3);
+            
+        
+
+        circle_marker_ce2d6c19574c0ca214e838990b098c49.bindPopup(popup_0f89db584169e3c8d46583b6c9e998e9)
+        ;
+
+        
+    
+    
+            var circle_marker_8b2722fbe36eccbf3431250740102e0d = L.circleMarker(
+                [22.55365167988345, 88.35173187860914],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.867924528301888, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_2c18b225826e5d5af54cc660748cc13d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40ee5143b95b4942bd7eed15b456369a = $(`<div id="html_40ee5143b95b4942bd7eed15b456369a" style="width: 100.0%; height: 100.0%;"> '17, Park St', 'Kolkata 700016', 'West Bengal', 'India' </div>`)[0];
+                popup_2c18b225826e5d5af54cc660748cc13d.setContent(html_40ee5143b95b4942bd7eed15b456369a);
+            
+        
+
+        circle_marker_8b2722fbe36eccbf3431250740102e0d.bindPopup(popup_2c18b225826e5d5af54cc660748cc13d)
+        ;
+
+        
+    
+    
+            var circle_marker_050c167e4ac28eda8b295573345ff0e7 = L.circleMarker(
+                [22.541217298910773, 88.35926670939986],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.962264150943396, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_97e6df1a9480d635c1b1b48a865073af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb2cb800d5d12bccde413b7b3b11051f = $(`<div id="html_eb2cb800d5d12bccde413b7b3b11051f" style="width: 100.0%; height: 100.0%;"> '222, Acharya Jagadish Chandra Bose Rd', 'Kolkata 700017', 'West Bengal', 'India' </div>`)[0];
+                popup_97e6df1a9480d635c1b1b48a865073af.setContent(html_eb2cb800d5d12bccde413b7b3b11051f);
+            
+        
+
+        circle_marker_050c167e4ac28eda8b295573345ff0e7.bindPopup(popup_97e6df1a9480d635c1b1b48a865073af)
+        ;
+
+        
+    
+    
+            var circle_marker_effd9e8494680de906bee3907f707fa8 = L.circleMarker(
+                [22.517641332811532, 88.3629834651947],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.169811320754717, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_424b527638cf7b3a29d331abd87c11d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85a3036a994f27ec27a9ec4a4c177024 = $(`<div id="html_85a3036a994f27ec27a9ec4a4c177024" style="width: 100.0%; height: 100.0%;"> 'Hindustan Pk', 'Kolkata 700029', 'West Bengal', 'India' </div>`)[0];
+                popup_424b527638cf7b3a29d331abd87c11d5.setContent(html_85a3036a994f27ec27a9ec4a4c177024);
+            
+        
+
+        circle_marker_effd9e8494680de906bee3907f707fa8.bindPopup(popup_424b527638cf7b3a29d331abd87c11d5)
+        ;
+
+        
+    
+    
+            var circle_marker_6a0cf18f653b08f5958aeeee2fdb224f = L.circleMarker(
+                [22.53890350555251, 88.32227826118468],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_e3a0c7e90acb40ed70983fc581a48fce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc286633b2d7aff0397a80e9fcc964dc = $(`<div id="html_cc286633b2d7aff0397a80e9fcc964dc" style="width: 100.0%; height: 100.0%;"> '34, Karl Marx Sarani', 'Kolkata 700023', 'West Bengal', 'India' </div>`)[0];
+                popup_e3a0c7e90acb40ed70983fc581a48fce.setContent(html_cc286633b2d7aff0397a80e9fcc964dc);
+            
+        
+
+        circle_marker_6a0cf18f653b08f5958aeeee2fdb224f.bindPopup(popup_e3a0c7e90acb40ed70983fc581a48fce)
+        ;
+
+        
+    
+    
+            var circle_marker_02f00e3b93ef8d3109eb76c76f7629ff = L.circleMarker(
+                [22.54792018921101, 88.399347558818],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.811320754716981, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_293de858bdcf103fa89d5b40151eeb4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc9d79d3f4e29b94541b599ce0eb5ff1 = $(`<div id="html_dc9d79d3f4e29b94541b599ce0eb5ff1" style="width: 100.0%; height: 100.0%;"> '4A, J. B. S. Haldane Ave', 'Kolkata 700105', 'West Bengal', 'India' </div>`)[0];
+                popup_293de858bdcf103fa89d5b40151eeb4c.setContent(html_dc9d79d3f4e29b94541b599ce0eb5ff1);
+            
+        
+
+        circle_marker_02f00e3b93ef8d3109eb76c76f7629ff.bindPopup(popup_293de858bdcf103fa89d5b40151eeb4c)
+        ;
+
+        
+    
+    
+            var circle_marker_d51c287b458662091fdf3209e004b9eb = L.circleMarker(
+                [22.537544764755527, 88.33421006677327],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3584905660377355, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_84a15a0cb60f8a8122e50c99749641ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d076482bb17ced2cbed122c44f00e68 = $(`<div id="html_4d076482bb17ced2cbed122c44f00e68" style="width: 100.0%; height: 100.0%;"> 'Taj Bengal', 'Kolkata 700027', 'West Bengal', 'India' </div>`)[0];
+                popup_84a15a0cb60f8a8122e50c99749641ed.setContent(html_4d076482bb17ced2cbed122c44f00e68);
+            
+        
+
+        circle_marker_d51c287b458662091fdf3209e004b9eb.bindPopup(popup_84a15a0cb60f8a8122e50c99749641ed)
+        ;
+
+        
+    
+    
+            var circle_marker_75bdbdc3901b662e9ded08ccd08327ba = L.circleMarker(
+                [22.53835353486725, 88.36498975753784],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.88679245283019, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_d8a2aa966a404aec2e6ba0da2e20311f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5935aac1d9d054d31d41149ba2fb8168 = $(`<div id="html_5935aac1d9d054d31d41149ba2fb8168" style="width: 100.0%; height: 100.0%;"> '48B, Syed Amir Ali Ave', 'Kolkata 700017', 'West Bengal', 'India' </div>`)[0];
+                popup_d8a2aa966a404aec2e6ba0da2e20311f.setContent(html_5935aac1d9d054d31d41149ba2fb8168);
+            
+        
+
+        circle_marker_75bdbdc3901b662e9ded08ccd08327ba.bindPopup(popup_d8a2aa966a404aec2e6ba0da2e20311f)
+        ;
+
+        
+    
+    
+            var circle_marker_dc76d456f5caaeaca99aca755f794b23 = L.circleMarker(
+                [22.529016083164827, 88.35580534635506],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_db589d05ae8b4e8f750969baf7fb1d29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72029630efe223cc0b076e490b7f6c32 = $(`<div id="html_72029630efe223cc0b076e490b7f6c32" style="width: 100.0%; height: 100.0%;"> '26/2, Ballygunge Circular Rd', 'Kolkata 700019', 'West Bengal', 'India' </div>`)[0];
+                popup_db589d05ae8b4e8f750969baf7fb1d29.setContent(html_72029630efe223cc0b076e490b7f6c32);
+            
+        
+
+        circle_marker_dc76d456f5caaeaca99aca755f794b23.bindPopup(popup_db589d05ae8b4e8f750969baf7fb1d29)
+        ;
+
+        
+    
+    
+            var circle_marker_611eccddeaa997cdb0765c10b7eb4525 = L.circleMarker(
+                [22.538591688992373, 88.3513984332749],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.924528301886792, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_974f3bbdbcac80d7f80a7c8ce79d7ecb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9178a41b9e3abc128d44aac2a37d9193 = $(`<div id="html_9178a41b9e3abc128d44aac2a37d9193" style="width: 100.0%; height: 100.0%;"> 'Forum Mall', 'Kolkata 700020', 'West Bengal', 'India' </div>`)[0];
+                popup_974f3bbdbcac80d7f80a7c8ce79d7ecb.setContent(html_9178a41b9e3abc128d44aac2a37d9193);
+            
+        
+
+        circle_marker_611eccddeaa997cdb0765c10b7eb4525.bindPopup(popup_974f3bbdbcac80d7f80a7c8ce79d7ecb)
+        ;
+
+        
+    
+    
+            var circle_marker_84f3810edf959407065c8b280c9bdce7 = L.circleMarker(
+                [22.56847337232699, 88.4344309363787],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.30188679245283, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_1838fcd950d4fe02a76b632e25a7a797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97d71b8cba870efee55d142a835ea307 = $(`<div id="html_97d71b8cba870efee55d142a835ea307" style="width: 100.0%; height: 100.0%;"> 'J2, Block GP, Sector V, Salt Lake', 'Kolkata 700091', 'West Bengal', 'India' </div>`)[0];
+                popup_1838fcd950d4fe02a76b632e25a7a797.setContent(html_97d71b8cba870efee55d142a835ea307);
+            
+        
+
+        circle_marker_84f3810edf959407065c8b280c9bdce7.bindPopup(popup_1838fcd950d4fe02a76b632e25a7a797)
+        ;
+
+        
+    
+    
+            var circle_marker_11bb0090458bc1dc0cd44004cc596f95 = L.circleMarker(
+                [22.495360102026766, 88.34308369634587],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_3f731185890aa2b4f39bcfa1673f34db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd5efa826fa2c7791b88dcc94d249fd6 = $(`<div id="html_fd5efa826fa2c7791b88dcc94d249fd6" style="width: 100.0%; height: 100.0%;"> '120, Deshapran Sasmal Rd', 'Kolkata 700033', 'West Bengal', 'India' </div>`)[0];
+                popup_3f731185890aa2b4f39bcfa1673f34db.setContent(html_fd5efa826fa2c7791b88dcc94d249fd6);
+            
+        
+
+        circle_marker_11bb0090458bc1dc0cd44004cc596f95.bindPopup(popup_3f731185890aa2b4f39bcfa1673f34db)
+        ;
+
+        
+    
+    
+            var circle_marker_edfd961f57d055e15fc10e3f949643c5 = L.circleMarker(
+                [22.5016520957947, 88.36169921050062],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.169811320754717, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_8f4c1bf71a38f8ede33966180ce09ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_926d3de3aa97f355777fa68f0b59d7bb = $(`<div id="html_926d3de3aa97f355777fa68f0b59d7bb" style="width: 100.0%; height: 100.0%;"> 'South City Mall', 'Kolkata 700068', 'West Bengal', 'India' </div>`)[0];
+                popup_8f4c1bf71a38f8ede33966180ce09ae6.setContent(html_926d3de3aa97f355777fa68f0b59d7bb);
+            
+        
+
+        circle_marker_edfd961f57d055e15fc10e3f949643c5.bindPopup(popup_8f4c1bf71a38f8ede33966180ce09ae6)
+        ;
+
+        
+    
+    
+            var circle_marker_e462b8bcd4b078a00dc6280be294b9ec = L.circleMarker(
+                [22.494599652615197, 88.35106648888241],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_e55851ad5102b2c0fb2373b3805dc1e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d7cc7d66d436d9234906fdf66a9f8fb = $(`<div id="html_8d7cc7d66d436d9234906fdf66a9f8fb" style="width: 100.0%; height: 100.0%;"> '18, Golf Club Rd', 'Kolkata 700033', 'West Bengal', 'India' </div>`)[0];
+                popup_e55851ad5102b2c0fb2373b3805dc1e8.setContent(html_8d7cc7d66d436d9234906fdf66a9f8fb);
+            
+        
+
+        circle_marker_e462b8bcd4b078a00dc6280be294b9ec.bindPopup(popup_e55851ad5102b2c0fb2373b3805dc1e8)
+        ;
+
+        
+    
+    
+            var circle_marker_e5a5e11d7c826c684edd12d396df983d = L.circleMarker(
+                [22.51383054406505, 88.35323095321655],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.849056603773585, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_606d071249bc9004cfc4deae974fb529 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d0c0af812dacb911d8057878a22af0e = $(`<div id="html_6d0c0af812dacb911d8057878a22af0e" style="width: 100.0%; height: 100.0%;"> '200, Sarat Bose Rd', 'Kolkata 700029', 'West Bengal', 'India' </div>`)[0];
+                popup_606d071249bc9004cfc4deae974fb529.setContent(html_6d0c0af812dacb911d8057878a22af0e);
+            
+        
+
+        circle_marker_e5a5e11d7c826c684edd12d396df983d.bindPopup(popup_606d071249bc9004cfc4deae974fb529)
+        ;
+
+        
+    
+    
+            var circle_marker_5b880a3e22f798024663a62195853edb = L.circleMarker(
+                [22.50160473533416, 88.36172554894057],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.169811320754717, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_70ced2d18946783cf02a484f065ccdd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6eb0ff1fd9c7537925d531b48fb2d95 = $(`<div id="html_a6eb0ff1fd9c7537925d531b48fb2d95" style="width: 100.0%; height: 100.0%;"> 'South City Mall', 'Kolkata 700068', 'West Bengal', 'India' </div>`)[0];
+                popup_70ced2d18946783cf02a484f065ccdd5.setContent(html_a6eb0ff1fd9c7537925d531b48fb2d95);
+            
+        
+
+        circle_marker_5b880a3e22f798024663a62195853edb.bindPopup(popup_70ced2d18946783cf02a484f065ccdd5)
+        ;
+
+        
+    
+    
+            var circle_marker_18ab8d79e4c639650ebc8b22380964f4 = L.circleMarker(
+                [22.5197036586171, 88.36542244843267],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.20754716981132, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_5f67297ed5746f0ea64a04909d26b120 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc550e67b943652321c50d5f80b4b722 = $(`<div id="html_dc550e67b943652321c50d5f80b4b722" style="width: 100.0%; height: 100.0%;"> 'Rashbehari Ave (Gariahat Rd)', 'Kolkata 700029', 'West Bangal', 'India' </div>`)[0];
+                popup_5f67297ed5746f0ea64a04909d26b120.setContent(html_dc550e67b943652321c50d5f80b4b722);
+            
+        
+
+        circle_marker_18ab8d79e4c639650ebc8b22380964f4.bindPopup(popup_5f67297ed5746f0ea64a04909d26b120)
+        ;
+
+        
+    
+    
+            var circle_marker_899efe4c80978ca59d97b0c22ffc4d83 = L.circleMarker(
+                [22.53705616463969, 88.35928036581664],
+                {"bubblingMouseEvents": true, "color": "#047360", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#047360", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.283018867924529, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_ecedb63ec89a384264152d099815820b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff3a647f4be89d4cd88ade39667beb77 = $(`<div id="html_ff3a647f4be89d4cd88ade39667beb77" style="width: 100.0%; height: 100.0%;"> 'No:3-A, Uniworth House,Gurusaday Rd', 'Kolkata 700019', 'West Bengal', 'India' </div>`)[0];
+                popup_ecedb63ec89a384264152d099815820b.setContent(html_ff3a647f4be89d4cd88ade39667beb77);
+            
+        
+
+        circle_marker_899efe4c80978ca59d97b0c22ffc4d83.bindPopup(popup_ecedb63ec89a384264152d099815820b)
+        ;
+
+        
+    
+    
+            var circle_marker_fe35b17f6713d02ad3b17610b2f33a17 = L.circleMarker(
+                [22.622990451645443, 88.450229325867],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_df1351f96e19ff2bf81c2718fea3be50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ca7bfa1d481f710d37304d1540a4c83 = $(`<div id="html_3ca7bfa1d481f710d37304d1540a4c83" style="width: 100.0%; height: 100.0%;"> 'City Centre 2', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_df1351f96e19ff2bf81c2718fea3be50.setContent(html_3ca7bfa1d481f710d37304d1540a4c83);
+            
+        
+
+        circle_marker_fe35b17f6713d02ad3b17610b2f33a17.bindPopup(popup_df1351f96e19ff2bf81c2718fea3be50)
+        ;
+
+        
+    
+    
+            var circle_marker_c9727d87d28f8fc3c2bb7e47847ecbe3 = L.circleMarker(
+                [22.61444664803176, 88.41183185577393],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3584905660377355, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_aba1629e92e48c3cf44362f3270b4902 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dbb13c5efcfd80063a94fa761385e6c = $(`<div id="html_2dbb13c5efcfd80063a94fa761385e6c" style="width: 100.0%; height: 100.0%;"> '166, Jessore Rd', 'Kolkata 700055', 'West Bengal', 'India' </div>`)[0];
+                popup_aba1629e92e48c3cf44362f3270b4902.setContent(html_2dbb13c5efcfd80063a94fa761385e6c);
+            
+        
+
+        circle_marker_c9727d87d28f8fc3c2bb7e47847ecbe3.bindPopup(popup_aba1629e92e48c3cf44362f3270b4902)
+        ;
+
+        
+    
+    
+            var circle_marker_6d34718dcd7aa17fefd0ba6b35ce591c = L.circleMarker(
+                [22.606674648116318, 88.52786667682449],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_edd5f46d7417855e390c8755936cde78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a749cefa156baa7ac6783a2fbef32c4c = $(`<div id="html_a749cefa156baa7ac6783a2fbef32c4c" style="width: 100.0%; height: 100.0%;"> 'Shikharpur', 'Kolkata 700135', 'West Bengal', 'India' </div>`)[0];
+                popup_edd5f46d7417855e390c8755936cde78.setContent(html_a749cefa156baa7ac6783a2fbef32c4c);
+            
+        
+
+        circle_marker_6d34718dcd7aa17fefd0ba6b35ce591c.bindPopup(popup_edd5f46d7417855e390c8755936cde78)
+        ;
+
+        
+    
+    
+            var circle_marker_1628f345bf3bafe67b665afce8164bf3 = L.circleMarker(
+                [22.622515346922857, 88.45027525403412],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.622641509433962, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_661dbddebc40af98ffc8181e6481586f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6450a37765fa6ef9486d06de8d5c2ba1 = $(`<div id="html_6450a37765fa6ef9486d06de8d5c2ba1" style="width: 100.0%; height: 100.0%;"> 'Plot no. AA-IID, JK no.11, Mouza: Noapara, New Town', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_661dbddebc40af98ffc8181e6481586f.setContent(html_6450a37765fa6ef9486d06de8d5c2ba1);
+            
+        
+
+        circle_marker_1628f345bf3bafe67b665afce8164bf3.bindPopup(popup_661dbddebc40af98ffc8181e6481586f)
+        ;
+
+        
+    
+    
+            var circle_marker_9c46ffe28bd7d94477b3eb1f0ebb31b1 = L.circleMarker(
+                [22.63313975970929, 88.43453647133795],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6792452830188678, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_6cf02fe90b23f12a2d1b76c0d3479f41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_041968dfaa725678564252b92cc66bf8 = $(`<div id="html_041968dfaa725678564252b92cc66bf8" style="width: 100.0%; height: 100.0%;"> '52, V. I. P. Rd', 'Kolkata 700052', 'West Bengal', 'India' </div>`)[0];
+                popup_6cf02fe90b23f12a2d1b76c0d3479f41.setContent(html_041968dfaa725678564252b92cc66bf8);
+            
+        
+
+        circle_marker_9c46ffe28bd7d94477b3eb1f0ebb31b1.bindPopup(popup_6cf02fe90b23f12a2d1b76c0d3479f41)
+        ;
+
+        
+    
+    
+            var circle_marker_6198786644ec6beabfca4f8b162618bf = L.circleMarker(
+                [22.622465608863006, 88.45011619070654],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.622641509433962, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_8f473be49f6bf8a8bef23bc5a8d0dd1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_778b808e28dc096de3bcad0a8e744dbd = $(`<div id="html_778b808e28dc096de3bcad0a8e744dbd" style="width: 100.0%; height: 100.0%;"> 'City Centre New Town Action Area 2D Plot No. 11/5', 'Kolkata 770157', 'West Bengal', 'India' </div>`)[0];
+                popup_8f473be49f6bf8a8bef23bc5a8d0dd1d.setContent(html_778b808e28dc096de3bcad0a8e744dbd);
+            
+        
+
+        circle_marker_6198786644ec6beabfca4f8b162618bf.bindPopup(popup_8f473be49f6bf8a8bef23bc5a8d0dd1d)
+        ;
+
+        
+    
+    
+            var circle_marker_a16772c0f08942e52c418c64b11c0e20 = L.circleMarker(
+                [22.70517629814379, 88.3743667602539],
+                {"bubblingMouseEvents": true, "color": "#7529F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7529F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_e1294a07daa7bf30222d29be16950094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fdf13943fa827d34707df45de773fc3 = $(`<div id="html_3fdf13943fa827d34707df45de773fc3" style="width: 100.0%; height: 100.0%;"> 'Raja Road , Sodepur', 'Kolkata 700115', 'West Bengal', 'India' </div>`)[0];
+                popup_e1294a07daa7bf30222d29be16950094.setContent(html_3fdf13943fa827d34707df45de773fc3);
+            
+        
+
+        circle_marker_a16772c0f08942e52c418c64b11c0e20.bindPopup(popup_e1294a07daa7bf30222d29be16950094)
+        ;
+
+        
+    
+    
+            var circle_marker_3f8f40d4905cb945a37b81a58cb1764f = L.circleMarker(
+                [22.575677201583147, 88.48236322402954],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_c130a5970bfea257b336c980cd6121d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a14183d71cfdacad9d1dd2fe004c2db = $(`<div id="html_1a14183d71cfdacad9d1dd2fe004c2db" style="width: 100.0%; height: 100.0%;"> 'Unitech Infospace', 'Kolkata 700156', 'West Bengal', 'India' </div>`)[0];
+                popup_c130a5970bfea257b336c980cd6121d6.setContent(html_1a14183d71cfdacad9d1dd2fe004c2db);
+            
+        
+
+        circle_marker_3f8f40d4905cb945a37b81a58cb1764f.bindPopup(popup_c130a5970bfea257b336c980cd6121d6)
+        ;
+
+        
+    
+    
+            var circle_marker_2b77812549a4ebd710bff7bcff02a989 = L.circleMarker(
+                [22.62280531191644, 88.34954023361206],
+                {"bubblingMouseEvents": true, "color": "#7529F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7529F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_7580ed25f5e8752761a689b2e541d0de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1182c2555473d212c142241963be6d73 = $(`<div id="html_1182c2555473d212c142241963be6d73" style="width: 100.0%; height: 100.0%;"> 'R. D. Mall', 'Hāora 711204', 'West Bengal', 'India' </div>`)[0];
+                popup_7580ed25f5e8752761a689b2e541d0de.setContent(html_1182c2555473d212c142241963be6d73);
+            
+        
+
+        circle_marker_2b77812549a4ebd710bff7bcff02a989.bindPopup(popup_7580ed25f5e8752761a689b2e541d0de)
+        ;
+
+        
+    
+    
+            var circle_marker_474f1ef9a83ab27777de17d473284d3f = L.circleMarker(
+                [22.62334772751002, 88.44175355613962],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.716981132075472, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_f8788b5109b268d799e29f04359597a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cea5e500c3e092de44e5617f43f09d64 = $(`<div id="html_cea5e500c3e092de44e5617f43f09d64" style="width: 100.0%; height: 100.0%;"> 'Chinar Pk', 'Kolkata 700156', 'West Bengal', 'India' </div>`)[0];
+                popup_f8788b5109b268d799e29f04359597a1.setContent(html_cea5e500c3e092de44e5617f43f09d64);
+            
+        
+
+        circle_marker_474f1ef9a83ab27777de17d473284d3f.bindPopup(popup_f8788b5109b268d799e29f04359597a1)
+        ;
+
+        
+    
+    
+            var circle_marker_2703aecef48ea33333f49e6023295841 = L.circleMarker(
+                [22.678015179096185, 88.29074621200562],
+                {"bubblingMouseEvents": true, "color": "#7529F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7529F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_1b6939dff3838b0421ccd92046a39f29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2e5e985e2a0d5b1e8a1620e5ce26fa2 = $(`<div id="html_d2e5e985e2a0d5b1e8a1620e5ce26fa2" style="width: 100.0%; height: 100.0%;"> 'Dankuni 712311', 'West Bengal', 'India' </div>`)[0];
+                popup_1b6939dff3838b0421ccd92046a39f29.setContent(html_d2e5e985e2a0d5b1e8a1620e5ce26fa2);
+            
+        
+
+        circle_marker_2703aecef48ea33333f49e6023295841.bindPopup(popup_1b6939dff3838b0421ccd92046a39f29)
+        ;
+
+        
+    
+    
+            var circle_marker_56f68c47662efbbc633b96562db645a7 = L.circleMarker(
+                [22.6226864719147, 88.45028400421143],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_bda8a35c4a78ce16332ec46f7b1e5255 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_982d56d3c0ff294db29c051413e6b409 = $(`<div id="html_982d56d3c0ff294db29c051413e6b409" style="width: 100.0%; height: 100.0%;"> 'City Centre 2', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_bda8a35c4a78ce16332ec46f7b1e5255.setContent(html_982d56d3c0ff294db29c051413e6b409);
+            
+        
+
+        circle_marker_56f68c47662efbbc633b96562db645a7.bindPopup(popup_bda8a35c4a78ce16332ec46f7b1e5255)
+        ;
+
+        
+    
+    
+            var circle_marker_38c1bd14ab88e4c227775b5ccf64685a = L.circleMarker(
+                [22.6232934, 88.4434075],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.943396226415095, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_14b457cdbc8fbf44700bd1766f0baaa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd52cde9456b9169d1ddf43e5736deb9 = $(`<div id="html_bd52cde9456b9169d1ddf43e5736deb9" style="width: 100.0%; height: 100.0%;"> 'Biswa Bangla Sarani, Rajarhat, Near City Centre 2', 'Kolkata 700136', 'West Bengal', 'India' </div>`)[0];
+                popup_14b457cdbc8fbf44700bd1766f0baaa2.setContent(html_bd52cde9456b9169d1ddf43e5736deb9);
+            
+        
+
+        circle_marker_38c1bd14ab88e4c227775b5ccf64685a.bindPopup(popup_14b457cdbc8fbf44700bd1766f0baaa2)
+        ;
+
+        
+    
+    
+            var circle_marker_fd67d6e09e927a448466dc03ab911a2d = L.circleMarker(
+                [22.615516268438355, 88.4125292301178],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9056603773584904, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_5e5e13feb581b6b060d2793d2a67442d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfed2244b535a5b2b3f2bf30c5c7a078 = $(`<div id="html_dfed2244b535a5b2b3f2bf30c5c7a078" style="width: 100.0%; height: 100.0%;"> '68, Jessore Rd', 'Kolkata 700055', 'West Bengal', 'India' </div>`)[0];
+                popup_5e5e13feb581b6b060d2793d2a67442d.setContent(html_dfed2244b535a5b2b3f2bf30c5c7a078);
+            
+        
+
+        circle_marker_fd67d6e09e927a448466dc03ab911a2d.bindPopup(popup_5e5e13feb581b6b060d2793d2a67442d)
+        ;
+
+        
+    
+    
+            var circle_marker_46f428dbc198c726edd6d031146504bd = L.circleMarker(
+                [22.622993182581098, 88.45035861724804],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_24b54fcfdd6e6bcd0722587681fa6576 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1485ffcdd4fefc9527e156b4c7a41921 = $(`<div id="html_1485ffcdd4fefc9527e156b4c7a41921" style="width: 100.0%; height: 100.0%;"> 'City Center 2, New Town, Rajarhat', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_24b54fcfdd6e6bcd0722587681fa6576.setContent(html_1485ffcdd4fefc9527e156b4c7a41921);
+            
+        
+
+        circle_marker_46f428dbc198c726edd6d031146504bd.bindPopup(popup_24b54fcfdd6e6bcd0722587681fa6576)
+        ;
+
+        
+    
+    
+            var circle_marker_614518d40a3842f3d9acb2a332abd943 = L.circleMarker(
+                [22.622171497386848, 88.45036983489989],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.622641509433962, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_070db728f4b570c70cea648b09c64800 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bc0dbef863f60c8eed553b2708d1352 = $(`<div id="html_0bc0dbef863f60c8eed553b2708d1352" style="width: 100.0%; height: 100.0%;"> 'City Centre 2 (Newtown)', 'Kolkata 700136', 'West Bengal', 'India' </div>`)[0];
+                popup_070db728f4b570c70cea648b09c64800.setContent(html_0bc0dbef863f60c8eed553b2708d1352);
+            
+        
+
+        circle_marker_614518d40a3842f3d9acb2a332abd943.bindPopup(popup_070db728f4b570c70cea648b09c64800)
+        ;
+
+        
+    
+    
+            var circle_marker_fa7b7a7f120c868f93972d55d2c8b19f = L.circleMarker(
+                [22.62297589794576, 88.45014751202348],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_a5b1ccaaed2d9df7c72269de64f7adce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0de0e563753f8fd75a65dc620a73c512 = $(`<div id="html_0de0e563753f8fd75a65dc620a73c512" style="width: 100.0%; height: 100.0%;"> 'City Center 2', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_a5b1ccaaed2d9df7c72269de64f7adce.setContent(html_0de0e563753f8fd75a65dc620a73c512);
+            
+        
+
+        circle_marker_fa7b7a7f120c868f93972d55d2c8b19f.bindPopup(popup_a5b1ccaaed2d9df7c72269de64f7adce)
+        ;
+
+        
+    
+    
+            var circle_marker_801b9745da3d260bdb5d35c4c48067d7 = L.circleMarker(
+                [22.6134090423584, 88.4184799194336],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6792452830188678, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_96359d0a771d4553eea6ed3ebc1528de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41db8a523b0e124f910809f2fbd9be7a = $(`<div id="html_41db8a523b0e124f910809f2fbd9be7a" style="width: 100.0%; height: 100.0%;"> 'Bangur Ave (Lake Town)', 'Kolkata 700055', 'West Bengal', 'India' </div>`)[0];
+                popup_96359d0a771d4553eea6ed3ebc1528de.setContent(html_41db8a523b0e124f910809f2fbd9be7a);
+            
+        
+
+        circle_marker_801b9745da3d260bdb5d35c4c48067d7.bindPopup(popup_96359d0a771d4553eea6ed3ebc1528de)
+        ;
+
+        
+    
+    
+            var circle_marker_00b9a471d1d97d383bfb780e4961e837 = L.circleMarker(
+                [22.622189999442398, 88.45009021193411],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.622641509433962, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_b3c90bf9c42677d1f8f3dea18231c76f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66542db8946237483623069bf792c9b9 = $(`<div id="html_66542db8946237483623069bf792c9b9" style="width: 100.0%; height: 100.0%;"> 'City Centre 2', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_b3c90bf9c42677d1f8f3dea18231c76f.setContent(html_66542db8946237483623069bf792c9b9);
+            
+        
+
+        circle_marker_00b9a471d1d97d383bfb780e4961e837.bindPopup(popup_b3c90bf9c42677d1f8f3dea18231c76f)
+        ;
+
+        
+    
+    
+            var circle_marker_1a1fe334ba2dcfa09cd6085f5efd69ef = L.circleMarker(
+                [22.617, 88.449],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.39622641509434, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_867d31e214ffab8b1b0a77f5ed7462a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63a27f55f586d0aa1890a151f80fb0b0 = $(`<div id="html_63a27f55f586d0aa1890a151f80fb0b0" style="width: 100.0%; height: 100.0%;"> '68/1AMOUNT POONAMALLEE ROADNEAR ICICI BANKPORUR,CHENNAI - 600116 PH.NO. 044-22522888/ 22522229/ 22523015/ 16/ 17/ 18.', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_867d31e214ffab8b1b0a77f5ed7462a5.setContent(html_63a27f55f586d0aa1890a151f80fb0b0);
+            
+        
+
+        circle_marker_1a1fe334ba2dcfa09cd6085f5efd69ef.bindPopup(popup_867d31e214ffab8b1b0a77f5ed7462a5)
+        ;
+
+        
+    
+    
+            var circle_marker_def6e346cdfe494b1ec1db2043eafc8c = L.circleMarker(
+                [22.62280531191644, 88.34954023361206],
+                {"bubblingMouseEvents": true, "color": "#7529F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7529F3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_3fd0dc03a73e202710a3c49f1a689155 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ace641638f407d41fa8ea15b9424b46 = $(`<div id="html_7ace641638f407d41fa8ea15b9424b46" style="width: 100.0%; height: 100.0%;"> 'R. D. Mall', 'Hāora 711204', 'West Bengal', 'India' </div>`)[0];
+                popup_3fd0dc03a73e202710a3c49f1a689155.setContent(html_7ace641638f407d41fa8ea15b9424b46);
+            
+        
+
+        circle_marker_def6e346cdfe494b1ec1db2043eafc8c.bindPopup(popup_3fd0dc03a73e202710a3c49f1a689155)
+        ;
+
+        
+    
+    
+            var circle_marker_a8df1e84efc3a70c9d464fe557539a9c = L.circleMarker(
+                [22.64060121859067, 88.43879557464575],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.490566037735849, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_7bced0787463df675c32dc9cca3086dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77adb5d6fb4e170ef4583defe19a0305 = $(`<div id="html_77adb5d6fb4e170ef4583defe19a0305" style="width: 100.0%; height: 100.0%;"> 'Netaji Subhash Chandra Bose International Airport', 'Kolkata 700052', 'West Bengal', 'India' </div>`)[0];
+                popup_7bced0787463df675c32dc9cca3086dc.setContent(html_77adb5d6fb4e170ef4583defe19a0305);
+            
+        
+
+        circle_marker_a8df1e84efc3a70c9d464fe557539a9c.bindPopup(popup_7bced0787463df675c32dc9cca3086dc)
+        ;
+
+        
+    
+    
+            var circle_marker_eca738fdedad311a3a2fbcd1b3fe0d73 = L.circleMarker(
+                [22.61836455157655, 88.43203268807126],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_1d3afb8bea45ee19c462a7cdd6d40fa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_136cd599cba7a6e07df82ff1ffa2805e = $(`<div id="html_136cd599cba7a6e07df82ff1ffa2805e" style="width: 100.0%; height: 100.0%;"> 'Raghunathpur (VIP Road, Beside Bazaar Kolkata)', 'Kolkata 700059', 'West Bengal', 'India' </div>`)[0];
+                popup_1d3afb8bea45ee19c462a7cdd6d40fa8.setContent(html_136cd599cba7a6e07df82ff1ffa2805e);
+            
+        
+
+        circle_marker_eca738fdedad311a3a2fbcd1b3fe0d73.bindPopup(popup_1d3afb8bea45ee19c462a7cdd6d40fa8)
+        ;
+
+        
+    
+    
+            var circle_marker_24cdd02689c684ac5c4389c7e8a592e9 = L.circleMarker(
+                [22.707036994037505, 88.47388744354248],
+                {"bubblingMouseEvents": true, "color": "#B88167", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B88167", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_1a32c759c9c0b219ca4351a786efed3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a13645eb1ecb307b063a11dff35e531d = $(`<div id="html_a13645eb1ecb307b063a11dff35e531d" style="width: 100.0%; height: 100.0%;"> 'N/24, Jessore Rd', 'Kolkata 700124', 'West Bengal', 'India' </div>`)[0];
+                popup_1a32c759c9c0b219ca4351a786efed3d.setContent(html_a13645eb1ecb307b063a11dff35e531d);
+            
+        
+
+        circle_marker_24cdd02689c684ac5c4389c7e8a592e9.bindPopup(popup_1a32c759c9c0b219ca4351a786efed3d)
+        ;
+
+        
+    
+    
+            var circle_marker_a43d55645667b94f3972ee7b761e48c7 = L.circleMarker(
+                [22.622968098515937, 88.4503497700007],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_c545939a4dbf03df798aef1c4281727b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c717e1bc560c7da0ea5fff1660e3be7 = $(`<div id="html_3c717e1bc560c7da0ea5fff1660e3be7" style="width: 100.0%; height: 100.0%;"> 'City Centre 2 (Rajarhat)', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_c545939a4dbf03df798aef1c4281727b.setContent(html_3c717e1bc560c7da0ea5fff1660e3be7);
+            
+        
+
+        circle_marker_a43d55645667b94f3972ee7b761e48c7.bindPopup(popup_c545939a4dbf03df798aef1c4281727b)
+        ;
+
+        
+    
+    
+            var circle_marker_9a1510e2990ed706221c9723947e946d = L.circleMarker(
+                [22.622926941824232, 88.45036041516343],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_7281d305a7b8a5976447775e7e8c0028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30b8278e7cdb0e6bbed6aa0fd91f8fbe = $(`<div id="html_30b8278e7cdb0e6bbed6aa0fd91f8fbe" style="width: 100.0%; height: 100.0%;"> 'City Center 2', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_7281d305a7b8a5976447775e7e8c0028.setContent(html_30b8278e7cdb0e6bbed6aa0fd91f8fbe);
+            
+        
+
+        circle_marker_9a1510e2990ed706221c9723947e946d.bindPopup(popup_7281d305a7b8a5976447775e7e8c0028)
+        ;
+
+        
+    
+    
+            var circle_marker_a36e8a1a745fec5d5de390841f1167a6 = L.circleMarker(
+                [22.642496580970697, 88.43964298001526],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_98ff3ad942ce433cc5280b1c8ae4fe1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cf13e93ffb64c9307221959697654f2 = $(`<div id="html_9cf13e93ffb64c9307221959697654f2" style="width: 100.0%; height: 100.0%;"> 'Netaji Subhash Chandra Bose International Airport', 'Kolkata 700052', 'West Bengal', 'India' </div>`)[0];
+                popup_98ff3ad942ce433cc5280b1c8ae4fe1d.setContent(html_9cf13e93ffb64c9307221959697654f2);
+            
+        
+
+        circle_marker_a36e8a1a745fec5d5de390841f1167a6.bindPopup(popup_98ff3ad942ce433cc5280b1c8ae4fe1d)
+        ;
+
+        
+    
+    
+            var circle_marker_3b1e2293c2ae6dee70a791afa830906b = L.circleMarker(
+                [22.67779937114212, 88.44636712273714],
+                {"bubblingMouseEvents": true, "color": "#B88167", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B88167", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.452830188679245, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_92eed14567b6c29614e6190dccc1bcc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b979ff013e0ea178d072d5adcb80bd6f = $(`<div id="html_b979ff013e0ea178d072d5adcb80bd6f" style="width: 100.0%; height: 100.0%;"> 'Jessore Rd', 'Madhyamgram 700133', 'West Bengal', 'India' </div>`)[0];
+                popup_92eed14567b6c29614e6190dccc1bcc2.setContent(html_b979ff013e0ea178d072d5adcb80bd6f);
+            
+        
+
+        circle_marker_3b1e2293c2ae6dee70a791afa830906b.bindPopup(popup_92eed14567b6c29614e6190dccc1bcc2)
+        ;
+
+        
+    
+    
+            var circle_marker_b968df93a8e7052f970148729d1dcabc = L.circleMarker(
+                [22.504386995020734, 88.51554891827568],
+                {"bubblingMouseEvents": true, "color": "#1D1D1B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1D1D1B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_ec58f03a723ce6bb7e47265bfac532d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36b1306cc16723188a9770b65768beff = $(`<div id="html_36b1306cc16723188a9770b65768beff" style="width: 100.0%; height: 100.0%;"> 'SEZ - Plot No. IT 27', 'Bantala 743502', 'West Bengal', 'India' </div>`)[0];
+                popup_ec58f03a723ce6bb7e47265bfac532d3.setContent(html_36b1306cc16723188a9770b65768beff);
+            
+        
+
+        circle_marker_b968df93a8e7052f970148729d1dcabc.bindPopup(popup_ec58f03a723ce6bb7e47265bfac532d3)
+        ;
+
+        
+    
+    
+            var circle_marker_a21c56f1e0c1d5ba87c6f3b3b9760483 = L.circleMarker(
+                [22.76893736874886, 88.54063057906417],
+                {"bubblingMouseEvents": true, "color": "#B88167", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B88167", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_d6c70d0488f553d7aa65e5d9fc679470 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e37044abbd5372dbf82fc55f10b04775 = $(`<div id="html_e37044abbd5372dbf82fc55f10b04775" style="width: 100.0%; height: 100.0%;"> 'Kashim Pur, Duttapukur', 'Barasat Sub-District 743248', 'West Bengal', 'India' </div>`)[0];
+                popup_d6c70d0488f553d7aa65e5d9fc679470.setContent(html_e37044abbd5372dbf82fc55f10b04775);
+            
+        
+
+        circle_marker_a21c56f1e0c1d5ba87c6f3b3b9760483.bindPopup(popup_d6c70d0488f553d7aa65e5d9fc679470)
+        ;
+
+        
+    
+    
+            var circle_marker_3d04e60926adb34c9c66e632e80e5eae = L.circleMarker(
+                [22.468426431008023, 88.10049606577975],
+                {"bubblingMouseEvents": true, "color": "#A2EE42", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A2EE42", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2264150943396226, "stroke": true, "weight": 3}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+        var popup_ef5cce654bb47e1e5a05d4139b5d0410 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7949422bebcfe8253d96aa9e77955965 = $(`<div id="html_7949422bebcfe8253d96aa9e77955965" style="width: 100.0%; height: 100.0%;"> 'Uluberia (Bazaarpara)', 'Hāora 711315', 'West Bengal', 'India' </div>`)[0];
+                popup_ef5cce654bb47e1e5a05d4139b5d0410.setContent(html_7949422bebcfe8253d96aa9e77955965);
+            
+        
+
+        circle_marker_3d04e60926adb34c9c66e632e80e5eae.bindPopup(popup_ef5cce654bb47e1e5a05d4139b5d0410)
+        ;
+
+        
+    
+    
+            var marker_fb965f3ecfff10fedd795e9bcb18cc36 = L.marker(
+                [22.541217298910773, 88.35926670939986],
+                {}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+            var icon_43a32b85ef7a3530c35a857f251da633 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_fb965f3ecfff10fedd795e9bcb18cc36.setIcon(icon_43a32b85ef7a3530c35a857f251da633);
+        
+    
+        var popup_1fb19d8a0bd42595a4f397d65c1d69a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb886f748cccd3e7ffd651bd440f7e96 = $(`<div id="html_fb886f748cccd3e7ffd651bd440f7e96" style="width: 100.0%; height: 100.0%;"> '222, Acharya Jagadish Chandra Bose Rd', 'Kolkata 700017', 'West Bengal', 'India' </div>`)[0];
+                popup_1fb19d8a0bd42595a4f397d65c1d69a6.setContent(html_fb886f748cccd3e7ffd651bd440f7e96);
+            
+        
+
+        marker_fb965f3ecfff10fedd795e9bcb18cc36.bindPopup(popup_1fb19d8a0bd42595a4f397d65c1d69a6)
+        ;
+
+        
+    
+    
+            var marker_8506e4f8c1c4e345610324ce31bc2cfe = L.marker(
+                [22.62280531191644, 88.34954023361206],
+                {}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+            var icon_a2787e0940c961a2152cc07693dccb7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8506e4f8c1c4e345610324ce31bc2cfe.setIcon(icon_a2787e0940c961a2152cc07693dccb7e);
+        
+    
+        var popup_98a8b9f7b8dfa3edd9da7b494e87c613 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b03db3256e6c6f2d4b1a43d0cf5427f = $(`<div id="html_9b03db3256e6c6f2d4b1a43d0cf5427f" style="width: 100.0%; height: 100.0%;"> 'R. D. Mall', 'Hāora 711204', 'West Bengal', 'India' </div>`)[0];
+                popup_98a8b9f7b8dfa3edd9da7b494e87c613.setContent(html_9b03db3256e6c6f2d4b1a43d0cf5427f);
+            
+        
+
+        marker_8506e4f8c1c4e345610324ce31bc2cfe.bindPopup(popup_98a8b9f7b8dfa3edd9da7b494e87c613)
+        ;
+
+        
+    
+    
+            var marker_8a00b6dbaec5cf995d18b5fc3e31bc3b = L.marker(
+                [22.617, 88.449],
+                {}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+            var icon_743a5d6c708e3855f8a137ef74de604e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8a00b6dbaec5cf995d18b5fc3e31bc3b.setIcon(icon_743a5d6c708e3855f8a137ef74de604e);
+        
+    
+        var popup_12ac701f7a83c47d37bc4f03b69b3259 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a14f94679e5f06ce06a516a43c815f89 = $(`<div id="html_a14f94679e5f06ce06a516a43c815f89" style="width: 100.0%; height: 100.0%;"> '68/1AMOUNT POONAMALLEE ROADNEAR ICICI BANKPORUR,CHENNAI - 600116 PH.NO. 044-22522888/ 22522229/ 22523015/ 16/ 17/ 18.', 'Kolkata 700157', 'West Bengal', 'India' </div>`)[0];
+                popup_12ac701f7a83c47d37bc4f03b69b3259.setContent(html_a14f94679e5f06ce06a516a43c815f89);
+            
+        
+
+        marker_8a00b6dbaec5cf995d18b5fc3e31bc3b.bindPopup(popup_12ac701f7a83c47d37bc4f03b69b3259)
+        ;
+
+        
+    
+    
+            var marker_61817ae7adafda444e49910e7b22e357 = L.marker(
+                [22.707036994037505, 88.47388744354248],
+                {}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+            var icon_c76249fd5b6eca603979daa8bed2361f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_61817ae7adafda444e49910e7b22e357.setIcon(icon_c76249fd5b6eca603979daa8bed2361f);
+        
+    
+        var popup_ad68eba31b14901ce800ee687cf2fd2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cee4dfde3db3434849c899f8694adcf6 = $(`<div id="html_cee4dfde3db3434849c899f8694adcf6" style="width: 100.0%; height: 100.0%;"> 'N/24, Jessore Rd', 'Kolkata 700124', 'West Bengal', 'India' </div>`)[0];
+                popup_ad68eba31b14901ce800ee687cf2fd2f.setContent(html_cee4dfde3db3434849c899f8694adcf6);
+            
+        
+
+        marker_61817ae7adafda444e49910e7b22e357.bindPopup(popup_ad68eba31b14901ce800ee687cf2fd2f)
+        ;
+
+        
+    
+    
+            var marker_c6646b20e577590bbbbc70b3ff61094f = L.marker(
+                [22.468426431008023, 88.10049606577975],
+                {}
+            ).addTo(map_b64929a73ba21e28928065cde8ae0cf1);
+        
+    
+            var icon_f2c4925574b8de29e16bf23a00cfc64c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_c6646b20e577590bbbbc70b3ff61094f.setIcon(icon_f2c4925574b8de29e16bf23a00cfc64c);
+        
+    
+        var popup_25eca9095e29521f0a3bc60a9bcfe0e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0318986a7d0b6713cbea2a0d7cc3a8c = $(`<div id="html_a0318986a7d0b6713cbea2a0d7cc3a8c" style="width: 100.0%; height: 100.0%;"> 'Uluberia (Bazaarpara)', 'Hāora 711315', 'West Bengal', 'India' </div>`)[0];
+                popup_25eca9095e29521f0a3bc60a9bcfe0e9.setContent(html_a0318986a7d0b6713cbea2a0d7cc3a8c);
+            
+        
+
+        marker_c6646b20e577590bbbbc70b3ff61094f.bindPopup(popup_25eca9095e29521f0a3bc60a9bcfe0e9)
+        ;
+
+        
+    
+</script>
+</html>
