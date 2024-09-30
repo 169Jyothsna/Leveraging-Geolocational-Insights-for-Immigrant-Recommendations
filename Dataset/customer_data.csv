@@ -1,0 +1,123 @@
+Name,Age,Gender,State_of_Origin,Education_Level,Marital_Status,Immigration_Status,Date_of_Arrival,Intended_Length_of_Stay,Previous_Visits_or_Stays,Feedback(out of 5),Employment_History,Current_Employment_Status,Current_City/Town_of_Residence,Reasons_for_Immigration,Preferred_City_or_Region,Lifestyle_Preferences,Residency_Status
+Priya Patel,35,Female,Gujarat,Bachelor's,Married,Permanent Resident,01-01-2024,Indefinite,0,3,Software Engineer,Employed,Ahmedabad,Better career opportunities,Mumbai,Urban,Permanent
+Rajesh Kumar,28,Male,Rajasthan,Master's,Single,Tourist,01-01-2024,2 weeks,1,4,Marketing Specialist,Employed,Jaipur,Vacation,Delhi,Suburban,Temporary
+Sunita Sharma,40,Female,Assam,PhD,Married,Dependent,02-01-2024,Indefinite,0,4,Professor,Employed,Guwahati,Family reunification,Bangalore,Suburban,Permanent
+Amit Singh,25,Male,Bihar,Bachelor's,Single,Student,03-01-2024,4 years,1,5,Student,Student,Patna,Higher education,Kolkata,Urban,Temporary
+Deepika Reddy,33,Female,Chhattisgarh,Master's,Married,Temporary Worker,04-01-2024,3 years,2,3,Financial Analyst,Employed,Kanpur,Job opportunity,Chennai,Urban,Temporary
+Rahul Gupta,30,Male,Goa,Bachelor's,Married,Visitor,05-01-2024,1 month,0,4,Homemaker,Not Employed,Nagpur,Family visit,Hyderabad,Suburban,Temporary
+Nisha Desai,29,Female,Gujarat,Bachelor's,Single,Exchange Visitor,05-01-2024,1 year,1,2,Research Assistant,Employed,Ahmedabad,Research opportunity,Kolkata,Urban,Temporary
+Anil Mehta,31,Male,Madhya Pradesh,Master's,Married,Investor,06-01-2024,Indefinite,2,1,Entrepreneur,Employed,Indore,Business expansion,Kolkata,Urban,Permanent
+Pooja Joshi,27,Female,Himachal Pradesh,Bachelor's,Single,Dependent,07-01-2024,2 years,4,3,Spouse of Student,Not Employed,Thane,Spouse's education,Gurgoan,Urban,Temporary
+Arjun Kumar,26,Male,Madhya Pradesh,Master's,Single,Temporary Worker,08-01-2024,3 years,2,4,Software Engineer,Employed,Bhopal,Job opportunity,Delhi,Suburban,Temporary
+Deepika Nair,35,Female,Bihar,Bachelor's,Married,Permanent Resident,09-01-2024,Indefinite,5,4,Marketing Specialist,Employed,Patna,Better career opportunities,Delhi,Urban,Permanent
+Ajay Rao,34,Male,Gujarat,Master's,Single,Tourist,09-01-2024,2 weeks,3,5,Professor,Employed,Vadodara,Vacation,Chennai,Suburban,Temporary
+Priya Patel,33,Female,Assam,PhD,Married,Dependent,09-01-2024,Indefinite,2,3,Student,Employed,Ghaziabad,Family reunification,Bangalore,Suburban,Permanent
+Sanjay Menon,32,Male,Bihar,Bachelor's,Single,Student,09-01-2024,4 years,0,4,Financial Analyst,Student,Ludhiana,Higher education,Mumbai,Urban,Temporary
+Meera Iyer,31,Female,Chhattisgarh,Master's,Married,Temporary Worker,10-01-2024,3 years,2,2,Homemaker,Employed,Agra,Job opportunity,Hyderabad,Urban,Temporary
+Karthik Rajan,30,Male,Goa,Bachelor's,Married,Visitor,11-01-2024,1 month,1,1,Research Assistant,Not Employed,Varanasi,Family visit,Kolkata,Suburban,Temporary
+Sneha Krishnan,29,Female,Gujarat,Bachelor's,Single,Exchange Visitor,12-01-2024,1 year,1,3,Entrepreneur,Employed,Ahmedabad,Research opportunity,Mumbai,Urban,Temporary
+Vikram Raghavan,28,Male,Haryana,Master's,Married,Investor,13-01-2024,Indefinite,1,4,Spouse of Student,Employed,Coimbatore,Business expansion,Mumbai,Urban,Permanent
+Ananya Subramanian,27,Female,Himachal Pradesh,Bachelor's,Single,Dependent,14-01-2024,2 years,2,3,Software Engineer,Not Employed,Madurai,Spouse's education,Delhi,Urban,Temporary
+Rahul Desai,26,Male,Gujarat,Master's,Single,Temporary Worker,14-01-2024,3 years,2,4,Marketing Specialist,Employed,Rajkot,Job opportunity,Mumbai,Urban,Temporary
+Shalini Reddy,35,Female,Karnataka,Bachelor's,Married,Permanent Resident,14-01-2024,Indefinite,1,4,Professor,Employed,Meerut,Better career opportunities,Kolkata,Urban,Permanent
+Vishnu Venkatesh,28,Male,Chhattisgarh,Master's,Single,Tourist,15-01-2024,2 weeks,1,5,Student,Employed,Raipur,Vacation,Hyderabad,Suburban,Temporary
+Nithya Sundaram,43,Female,Madhya Pradesh,PhD,Married,Dependent,16-01-2024,Indefinite,3,3,Financial Analyst,Employed,Jodhpur,Family reunification,Kolkata,Suburban,Permanent
+Suresh Chandrasekhar,25,Male,Maharashtra,Bachelor's,Single,Student,17-01-2024,4 years,1,4,Homemaker,Student,Amritsar,Higher education,Mumbai,Urban,Temporary
+Rohan Patel,21,Male,Manipur,Master's,Married,Temporary Worker,18-01-2024,3 years,5,2,Research Assistant,Employed,Allahabad,Job opportunity,Hyderabad,Urban,Temporary
+Priya Desai,45,Female,Jharkhand,Bachelor's,Married,Visitor,19-01-2024,1 month,1,1,Entrepreneur,Not Employed,Ranchi,Family visit,Delhi,Urban,Temporary
+Aryan Mehta,29,Male,Mizoram,Bachelor's,Single,Exchange Visitor,20-01-2024,1 year,4,3,Spouse of Student,Employed,Howrah,Research opportunity,Mumbai,Urban,Temporary
+Ananya Shah,29,Female,Madhya Pradesh,Master's,Married,Investor,20-01-2024,Indefinite,1,4,Software Engineer,Employed,Jabalpur,Business expansion,Hyderabad,Urban,Permanent
+Sanjay Joshi,27,Male,Jharkhand,Bachelor's,Single,Permanent Resident,22-01-2024,2 weeks,5,5,Marketing Specialist,Not Employed,Dhanbad,Spouse's education,Delhi,Urban,Temporary
+Nisha Patel,26,Female,Madhya Pradesh,Master's,Single,Tourist,23-01-2024,Indefinite,1,5,Professor,Employed,Gwalior,Job opportunity,Hyderabad,Urban,Temporary
+Akash Patel,36,Male,Andhra Pradesh,Bachelor's,Married,Dependent,23-01-2024,4 years,0,5,Student,Employed,Vijayawada,Better career opportunities,Chennai,Suburban,Permanent
+Riya Shah,28,Female,Chandigarh,Master's,Single,Student,23-01-2024,3 years,2,4,Financial Analyst,Employed,Chandigarh,Vacation,Gurgoan,Suburban,Temporary
+Aarav Shah,40,Male,Assam,PhD,Married,Temporary Worker,24-01-2024,1 month,4,3,Homemaker,Employed,Guwahati,Family reunification,Gurgoan,Urban,Permanent
+Pooja Patel,25,Female,Karnataka,Bachelor's,Single,Visitor,25-01-2024,1 year,2,4,Research Assistant,Student,Hubli-Dharwad,Higher education,Mumbai,Urban,Temporary
+Arjun Das,33,Male,Karnataka,Master's,Married,Exchange Visitor,26-01-2024,Indefinite,5,4,Entrepreneur,Employed,Mangalore,Job opportunity,Mumbai,Urban,Temporary
+Priya Sharma,30,Female,Uttar Pradesh,Bachelor's,Married,Investor,27-01-2024,2 years,2,5,Spouse of Student,Employed,Mysore,Family visit,Gurgoan,Urban,Temporary
+Rahul Banerjee,29,Male,Uttarakhand,Bachelor's,Single,Dependent,27-01-2024,3 years,5,4,Software Engineer,Employed,Tiruchirappalli (Trichy),Research opportunity,Gurgoan,Urban,Temporary
+Ananya Mukherjee,28,Female,West Bengal,Master's,Married,Temporary Worker,27-01-2024,1 year,2,4,Marketing Specialist,Employed,Pondicherry (Puducherry),Business expansion,Mumbai,Urban,Permanent
+Saurav Chatterjee,27,Male,Andhra Pradesh,Bachelor's,Single,Permanent Resident,28-01-2024,Indefinite,5,2,Professor,Student,Cuttack,Spouse's education,Mumbai,Urban,Temporary
+Riya Ghosh,26,Female,Arunachal Pradesh,Master's,Single,Tourist,29-01-2024,2 years,1,1,Student,Employed,Mumbai,Job opportunity,Hyderabad,Urban,Temporary
+Alok Sen,25,Male,Assam,Bachelor's,Married,Dependent,30-01-2024,3 years,1,3,Financial Analyst,Not Employed,Delhi,Better career opportunities,Kolkata,Urban,Permanent
+Trisha Dasgupta,24,Female,Karnataka,Master's,Single,Student,31-01-2024,Indefinite,1,3,Homemaker,Employed,Bangalore,Vacation,Kolkata,Urban,Temporary
+Rohan Ray,23,Male,Chhattisgarh,PhD,Married,Temporary Worker,31-01-2024,2 weeks,1,4,Research Assistant,Employed,Kolkata,Family reunification,Gurgoan,Suburban,Permanent
+Pooja Sengupta,25,Female,Goa,Bachelor's,Single,Visitor,31-01-2024,Indefinite,0,1,Entrepreneur,Employed,Chennai,Higher education,Mumbai,Urban,Temporary
+Rohan Singh,33,Male,Gujarat,Master's,Married,Permanent Resident,31-01-2024,4 years,1,5,Spouse of Student,Employed,Surat,Job opportunity,Hyderabad,Urban,Temporary
+Aarav Gupta,30,Male,Haryana,Bachelor's,Married,Tourist,01-02-2024,3 years,0,3,Software Engineer,Student,Pune,Family visit,Hyderabad,Urban,Temporary
+Ananya Das,29,Female,Andhra Pradesh,Bachelor's,Single,Dependent,02-02-2024,1 month,2,4,Marketing Specialist,Employed,Tirupati,Research opportunity,Mumbai,Urban,Temporary
+Siddharth Menon,31,Male,Kerala,Master's,Married,Student,03-02-2024,1 year,4,2,Professor,Not Employed,Kozhikode (Calicut),Business expansion,Chennai,Suburban,Permanent
+Aisha Khan,27,Female,Karnataka,Bachelor's,Single,Temporary Worker,04-02-2024,Indefinite,2,1,Student,Employed,Warangal,Spouse's education,Kolkata,Urban,Temporary
+Arjun Desai,26,Male,Kerala,Master's,Single,Visitor,05-02-2024,2 weeks,5,3,Financial Analyst,Employed,Ajmer,Job opportunity,Delhi,Urban,Temporary
+Nandini Choudhury,35,Female,Madhya Pradesh,Bachelor's,Married,Exchange Visitor,05-02-2024,Indefinite,2,4,Homemaker,Not Employed,Siliguri,Better career opportunities,Bangalore,Urban,Permanent
+Vikram Iyer,28,Male,Maharashtra,Master's,Single,Investor,07-02-2024,4 years,5,4,Research Assistant,Employed,Bikaner,Vacation,Hyderabad,Suburban,Temporary
+Meera Verma,40,Female,Chhattisgarh,PhD,Married,Dependent,08-02-2024,3 years,2,3,Entrepreneur,Employed,Bilaspur,Family reunification,Hyderabad,Suburban,Permanent
+Aditya Joshi,25,Male,Himachal Pradesh,Bachelor's,Single,Permanent Resident,09-02-2024,1 month,5,4,Spouse of Student,Employed,Shimla,Higher education,Chennai,Urban,Temporary
+Sanjana Reddy,33,Female,Mizoram,Master's,Married,Tourist,09-02-2024,Indefinite,1,5,Software Engineer,Student,Agartala,Job opportunity,Mumbai,Urban,Temporary
+Krish Kapoor,30,Male,Chhattisgarh,Bachelor's,Married,Dependent,09-02-2024,2 weeks,1,5,Marketing Specialist,Employed,Durgapur,Family visit,Chennai,Urban,Temporary
+Pooja Mehta,29,Female,Odisha,Bachelor's,Single,Student,10-02-2024,Indefinite,1,3,Professor,Not Employed,Nanded,Research opportunity,Hyderabad,Urban,Temporary
+Rahul Khanna,31,Male,Punjab,Master's,Married,Temporary Worker,11-02-2024,4 years,1,4,Student,Employed,Rourkela,Business expansion,Bangalore,Urban,Permanent
+Tanvi Shah,27,Female,Gujarat,Bachelor's,Single,Visitor,12-02-2024,3 years,0,2,Financial Analyst,Employed,Bhavnagar,Spouse's education,Mumbai,Urban,Temporary
+Surya Singhania,26,Male,Andhra Pradesh,Master's,Single,Exchange Visitor,13-02-2024,1 month,1,1,Homemaker,Not Employed,Visakhapatnam,Job opportunity,Mumbai,Urban,Temporary
+Riya Malhotra,35,Female,Tamil Nadu,Bachelor's,Married,Investor,14-02-2024,1 year,5,3,Research Assistant,Employed,Moradabad,Better career opportunities,Hyderabad,Urban,Permanent
+Karthik Rao,28,Male,Kerala,Master's,Single,Permanent Resident,14-02-2024,Indefinite,2,3,Entrepreneur,Employed,Thrissur,Vacation,Delhi,Suburban,Temporary
+Arjun Krishnan,40,Male,Tripura,PhD,Married,Tourist,14-02-2024,2 years,5,4,Spouse of Student,Employed,Aligarh,Family reunification,Mumbai,Suburban,Permanent
+Meera Natarajan,52,Female,Uttar Pradesh,Bachelor's,Single,Dependent,14-02-2024,3 years,2,3,Software Engineer,Employed,Guntur,Higher education,Mumbai,Urban,Temporary
+Ramesh Iyer,64,Male,Haryana,Master's,Married,Student,15-02-2024,Indefinite,5,5,Marketing Specialist,Student,Rohtak,Job opportunity,Bangalore,Urban,Temporary
+Deepa Menon,76,Female,Haryana,Bachelor's,Married,Temporary Worker,16-02-2024,2 weeks,1,2,Professor,Employed,Panipat,Family visit,Bangalore,Urban,Temporary
+Ananya Srinivasan,68,Female,Andhra Pradesh,Bachelor's,Single,Visitor,16-02-2024,Indefinite,1,4,Student,Not Employed,Firozabad,Research opportunity,Hyderabad,Urban,Temporary
+Karthik Ranganathan,31,Male,Kerala,Master's,Married,Exchange Visitor,17-02-2024,4 years,1,2,Financial Analyst,Employed,Kollam (Quilon),Business expansion,Gurgoan,Urban,Permanent
+Priya Venkataraman,27,Female,Assam,Bachelor's,Single,Permanent Resident,18-02-2024,3 years,5,1,Homemaker,Employed,Ajmer,Spouse's education,Chennai,Urban,Temporary
+Vikram Sundaram,26,Male,Bihar,Master's,Single,Tourist,18-02-2024,1 month,2,3,Research Assistant,Employed,Mathura,Job opportunity,Chennai,Urban,Temporary
+Shreya Subramanian,35,Female,Chhattisgarh,Bachelor's,Married,Dependent,18-02-2024,1 year,5,4,Entrepreneur,Employed,Shahjahanpur,Better career opportunities,Gurgoan,Urban,Permanent
+Sanjay Iyengar,28,Male,Andhra Pradesh,Master's,Single,Student,18-02-2024,Indefinite,2,3,Spouse of Student,Employed,Rajahmundry,Vacation,Chennai,Urban,Temporary
+Rajesh Patel,40,Male,Andhra Pradesh,PhD,Married,Temporary Worker,19-02-2024,2 years,5,4,Software Engineer,Student,Kadapa (Cuddapah),Family reunification,Delhi,Suburban,Permanent
+Rakesh Singh,25,Male,Haryana,Bachelor's,Single,Visitor,20-02-2024,3 years,1,2,Marketing Specialist,Employed,Bokaro Steel City,Higher education,Hyderabad,Urban,Temporary
+Deepak Tiwari,33,Female,Himachal Pradesh,Master's,Married,Exchange Visitor,21-02-2024,Indefinite,1,5,Professor,Not Employed,Bhagalpur,Job opportunity,Mumbai,Urban,Temporary
+Nitin Sharma,33,Male,Bihar,Bachelor's,Married,Investor,22-02-2024,2 weeks,1,3,Student,Employed,Muzaffarnagar,Family visit,Kolkata,Urban,Temporary
+Manoj Chouhan,29,Male,Karnataka,Bachelor's,Single,Permanent Resident,23-02-2024,Indefinite,0,4,Financial Analyst,Employed,Dhule,Research opportunity,Kolkata,Urban,Temporary
+Anil Yadav,31,Male,Kerala,Master's,Married,Tourist,24-02-2024,4 years,2,2,Homemaker,Employed,Korba,Business expansion,Mumbai,Urban,Permanent
+Sanjay Verma,33,Male,Madhya Pradesh,Bachelor's,Single,Dependent,24-02-2024,3 years,4,1,Research Assistant,Employed,Bhilwara,Spouse's education,Delhi,Urban,Temporary
+Amit Mishra,35,Male,Karnataka,Master's,Single,Student,24-02-2024,1 month,2,3,Entrepreneur,Employed,Mangaluru (Mangalore),Job opportunity,Bangalore,Urban,Temporary
+Sunil Gupta,37,Male,Manipur,Bachelor's,Married,Temporary Worker,24-02-2024,1 year,5,4,Spouse of Student,Student,Jhansi,Better career opportunities,Mumbai,Urban,Permanent
+Praveen Dubey,39,Male,Gujarat,Master's,Single,Visitor,25-02-2024,Indefinite,2,5,Software Engineer,Employed,Gandhidham,Vacation,Gurgoan,Suburban,Temporary
+Vinay Kumar,41,Male,Mizoram,PhD,Married,Exchange Visitor,26-02-2024,2 years,5,5,Marketing Specialist,Not Employed,Bhilai,Family reunification,Gurgoan,Suburban,Permanent
+Ashish Pandey,43,Male,Goa,Bachelor's,Single,Investor,27-02-2024,3 years,2,4,Professor,Employed,Panaji,Higher education,Hyderabad,Urban,Temporary
+Mukesh Trivedi,45,Male,Odisha,Master's,Married,Dependent,28-02-2024,Indefinite,5,3,Student,Employed,Kharagpur,Job opportunity,Mumbai,Urban,Temporary
+Ravi Malhotra,30,Male,Kerala,Bachelor's,Married,Permanent Resident,29-02-2024,2 weeks,1,4,Financial Analyst,Employed,Palakkad,Family visit,Chennai,Urban,Temporary
+Pradeep Jain,29,Male,Rajasthan,Bachelor's,Single,Tourist,01-03-2024,Indefinite,1,4,Homemaker,Student,Itanagar,Research opportunity,Kolkata,Urban,Temporary
+Dinesh Mishra,31,Male,Kerala,Master's,Married,Dependent,02-03-2024,Indefinite,1,5,Research Assistant,Employed,Kottayam,Business expansion,Chennai,Urban,Permanent
+Arvind Saxena,27,Male,Tamil Nadu,Bachelor's,Single,Student,03-03-2024,2 weeks,1,4,Marketing Specialist,Not Employed,Mirzapur,Spouse's education,Delhi,Urban,Temporary
+Vikas Tripathi,26,Male,Haryana,Master's,Single,Temporary Worker,04-03-2024,Indefinite,0,4,Professor,Employed,Ambala,Job opportunity,Bangalore,Urban,Temporary
+Ajay Agrawal,35,Male,Tripura,Bachelor's,Married,Visitor,05-03-2024,4 years,0,3,Student,Employed,Deoghar,Better career opportunities,Mumbai,Urban,Permanent
+Anuj Joshi,28,Male,Uttar Pradesh,Master's,Single,Exchange Visitor,06-03-2024,3 years,2,4,Financial Analyst,Not Employed,Nizamabad,Vacation,Delhi,Urban,Temporary
+Rajesh Sharma,40,Male,Himachal Pradesh,PhD,Married,Investor,07-03-2024,1 month,4,5,Homemaker,Employed,Kangra,Family reunification,Mumbai,Suburban,Permanent
+Ankit Singh,25,Male,West Bengal,Bachelor's,Single,Dependent,08-03-2024,1 year,2,5,Research Assistant,Employed,Nalgonda,Higher education,Gurgoan,Urban,Temporary
+Neha Gupta,33,Female,Andhra Pradesh,Master's,Married,Temporary Worker,09-03-2024,Indefinite,5,3,Entrepreneur,Employed,Nellore,Job opportunity,Gurgoan,Urban,Temporary
+Rakesh Kumar,30,Male,Arunachal Pradesh,Bachelor's,Married,Permanent Resident,10-03-2024,2 years,2,4,Marketing Specialist,Student,Thanjavur,Family visit,Bangalore,Urban,Temporary
+Priya Verma,29,Female,Assam,Bachelor's,Single,Tourist,11-03-2024,Indefinite,5,2,Professor,Employed,Haldia,Research opportunity,Hyderabad,Urban,Temporary
+Deepak Chauhan,31,Male,Uttarakhand,Master's,Married,Dependent,12-03-2024,2 weeks,2,1,Student,Not Employed,Haridwar,Business expansion,Hyderabad,Urban,Permanent
+Pooja Yadav,27,Female,Madhya Pradesh,Bachelor's,Single,Student,13-03-2024,Indefinite,5,3,Financial Analyst,Employed,Ujjain,Spouse's education,Mumbai,Urban,Temporary
+Mohan Srivastava,27,Male,Andhra Pradesh,Master's,Single,Temporary Worker,14-03-2024,4 years,1,4,Homemaker,Employed,Ongole,Job opportunity,Gurgoan,Urban,Temporary
+Suresh Singhania,26,Male,Gujarat,Bachelor's,Married,Visitor,15-03-2024,3 years,1,4,Research Assistant,Not Employed,Mumbai,Better career opportunities,Mumbai,Urban,Permanent
+Meera Kapoor,25,Female,Haryana,Master's,Single,Permanent Resident,16-03-2024,1 month,1,5,Entrepreneur,Employed,Delhi,Vacation,Delhi,Urban,Temporary
+Vikas Mishra,24,Male,Karnataka,PhD,Married,Tourist,17-03-2024,1 year,1,3,Marketing Specialist,Employed,Bangalore,Family reunification,Gurgoan,Suburban,Permanent
+Aarti Malik,23,Female,Jharkhand,Bachelor's,Single,Dependent,18-03-2024,Indefinite,0,3,Professor,Employed,Kolkata,Higher education,Kolkata,Urban,Temporary
+Sunil Bhatia,22,Male,Karnataka,Master's,Married,Student,19-03-2024,Indefinite,5,4,Student,Employed,Chennai,Job opportunity,Chennai,Urban,Temporary
+Kavita Rawat,21,Female,Kerala,Bachelor's,Married,Temporary Worker,20-03-2024,2 weeks,1,4,Marketing Specialist,Student,Palakkad,Family visit,Hyderabad,Urban,Temporary
+Manoj Saxena,20,Male,Madhya Pradesh,Bachelor's,Single,Visitor,21-03-2024,Indefinite,1,3,Professor,Employed,Pune,Research opportunity,Hyderabad,Suburban,Temporary
+Rajesh Sharma,29,Male,Gujarat,Master's,Married,Permanent Resident,22-03-2024,4 years,0,4,Student,Not Employed,Ahmedabad,Business expansion,Kolkata,Urban,Permanent
+Anil Singh,31,Male,Manipur,Bachelor's,Single,Tourist,23-03-2024,3 years,2,5,Financial Analyst,Employed,Jaipur,Spouse's education,Mumbai,Urban,Temporary
+Deepak Patel,27,Male,Meghalaya,Master's,Single,Dependent,24-03-2024,1 month,4,5,Homemaker,Employed,Lucknow,Job opportunity,Hyderabad,Urban,Temporary
+Rakesh Verma,26,Male,Mizoram,Bachelor's,Married,Student,25-03-2024,1 year,2,3,Research Assistant,Employed,Mumbai,Better career opportunities,Hyderabad,Urban,Permanent
+Sunil Gupta,35,Male,Nagaland,Master's,Single,Temporary Worker,26-03-2024,Indefinite,5,4,Entrepreneur,Employed,Delhi,Vacation,Chennai,Urban,Temporary
+Vijay Tiwari,28,Male,Karnataka,PhD,Married,Visitor,27-03-2024,Indefinite,2,2,Marketing Specialist,Student,Bangalore,Family reunification,Delhi,Suburban,Permanent
+Nitin Dubey,40,Male,Punjab,Bachelor's,Single,Exchange Visitor,28-03-2024,2 weeks,5,1,Professor,Employed,Kolkata,Better career opportunities,Mumbai,Urban,Temporary
+Manoj Mishra,25,Male,Rajasthan,Master's,Married,Permanent Resident,29-03-2024,Indefinite,2,3,Marketing Specialist,Not Employed,Chennai,Vacation,Bangalore,Urban,Permanent
+Sanjay Yadav,33,Male,Telangana,Bachelor's,Single,Tourist,30-03-2024,4 years,5,4,Professor,Employed,Hyderabad,Family reunification,Mumbai,Urban,Temporary
+Ravi Chouhan,30,Male,Tamil Nadu,Bachelor's,Married,Dependent,31-03-2024,3 years,1,2,Student,Employed,Pune,Higher education,Hyderabad,Suburban,Temporary
+Amit Singhania,29,Male,Gujarat,Master's,Single,Student,01-04-2024,1 month,1,5,Financial Analyst,Employed,Ahmedabad,Job opportunity,Delhi,Urban,Temporary
+Ashok Sahu,31,Male,Tripura,Bachelor's,Married,Temporary Worker,02-04-2024,1 year,1,3,Homemaker,Student,Jaipur,Family visit,Chennai,Suburban,Temporary
+Rajendra Singh Rathore,27,Male,Uttar Pradesh,Master's,Married,Visitor,03-04-2024,Indefinite,1,4,Research Assistant,Employed,Lucknow,Research opportunity,Kolkata,Urban,Permanent
+Vivek Pandey,26,Male,Gujarat,Bachelor's,Single,Exchange Visitor,04-04-2024,2 years,0,2,Entrepreneur,Not Employed,Surat,Business expansion,Hyderabad,Urban,Temporary
+Prashant Chaturvedi,35,Male,West Bengal,Master's,Married,Investor,05-04-2024,3 years,0,4,Spouse of Student,Employed,Kanpur,Spouse's education,Mumbai,Urban,Temporary
